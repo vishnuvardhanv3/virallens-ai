@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/virallens_logo.png" alt="ViralLens AI Logo" width="180" />
+</p>
+
 # ViralLens AI
 
 A multimodal Instagram Reel intelligence system.
