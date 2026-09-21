@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ViralLens Attention Intelligence Schema",
+  "description": "Canonical schema for unified temporal attention and spatial visual-saliency intelligence within ViralLens.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "temporal",
+    "spatial",
+    "context",
+    "relationships",
+    "events",
+    "interpretation",
+    "limitations",
+    "provenance",
+    "telemetry"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["1.0.0"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["SUCCESS", "PARTIAL", "FAILED", "NO_DATA"]
+    },
+    "temporal": {
+      "type": "object",
+      "required": [
+        "source",
+        "signal_type",
+        "status",
+        "baseline",
+        "peak",
+        "peak_timestamp",
+        "relative_peak_position",
+        "opening_signal",
+        "temporal_variability",
+        "temporal_persistence",
+        "descriptors"
+      ],
+      "properties": {
+        "source": { "type": "string", "enum": ["NEMAR"] },
+        "signal_type": { "type": "string", "enum": ["laboratory_derived_attention_signal"] },
+        "status": { "type": "string" },
+        "trajectory": { "type": "array" },
+        "baseline": { "type": "number" },
+        "mean_score": { "type": "number" },
+        "median_score": { "type": "number" },
+        "peak": { "type": "number" },
+        "peak_timestamp": { "type": "number" },
+        "relative_peak_position": { "type": "number" },
+        "opening_signal": { "type": "number" },
+        "opening_vs_body": { "type": "number" },
+        "temporal_variability": { "type": "number" },
+        "temporal_persistence": { "type": "object" },
+        "attention_drops": { "type": "array" },
+        "attention_recoveries": { "type": "array" },
+        "temporal_concentration": { "type": "number" },
+        "transition_alignment": { "type": "array" },
+        "descriptors": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "spatial": {
+      "type": "object",
+      "required": [
+        "source",
+        "signal_type",
+        "status",
+        "centroid",
+        "peak_focus",
+        "dispersion",
+        "entropy",
+        "temporal_centroid_drift",
+        "focal_concentration",
+        "focal_competition",
+        "descriptors"
+      ],
+      "properties": {
+        "source": { "type": "string", "enum": ["TinySalNet_DHF1K"] },
+        "signal_type": { "type": "string", "enum": ["predicted_visual_saliency"] },
+        "status": { "type": "string" },
+        "centroid": {
+          "type": "object",
+          "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+        },
+        "peak_focus": {
+          "type": "object",
+          "properties": { "x": { "type": "number" }, "y": { "type": "number" } }
+        },
+        "dispersion": { "type": "number" },
+        "entropy": { "type": "number" },
+        "temporal_centroid_drift": { "type": "number" },
+        "focal_concentration": { "type": "number" },
+        "focal_consistency": { "type": "number" },
+        "inter_frame_shift": { "type": "number" },
+        "focal_competition": {
+          "type": "object",
+          "required": ["competition_state", "dominant_region_mass", "secondary_region_mass", "concentration_ratio", "rationale"],
+          "properties": {
+            "competition_state": {
+              "type": "string",
+              "enum": ["single_focus", "moderately_distributed", "multi_focus", "diffuse"]
+            },
+            "dominant_region_mass": { "type": "number" },
+            "secondary_region_mass": { "type": "number" },
+            "concentration_ratio": { "type": "number" },
+            "dispersion": { "type": "number" },
+            "entropy_bits": { "type": "number" },
+            "rationale": { "type": "string" }
+          }
+        },
+        "descriptors": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "face_presence": { "type": "number" },
+        "text_presence": { "type": "boolean" },
+        "motion": { "type": "number" },
+        "scene_cuts": { "type": "integer" },
+        "visual_complexity": { "type": "number" },
+        "semantic_subjects": { "type": "array" }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "required": [
+        "spatial_temporal_alignment",
+        "focal_competition",
+        "text_saliency_interaction",
+        "face_saliency_interaction",
+        "transition_attention_alignment"
+      ],
+      "properties": {
+        "spatial_temporal_alignment": { "type": "object" },
+        "focal_competition": { "type": "object" },
+        "text_saliency_interaction": { "type": "object" },
+        "face_saliency_interaction": { "type": "object" },
+        "transition_attention_alignment": { "type": "object" }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_type",
+          "timestamp_start",
+          "timestamp_end",
+          "evidence",
+          "source_signals",
+          "confidence",
+          "interpretation"
+        ],
+        "properties": {
+          "event_type": {
+            "type": "string",
+            "enum": [
+              "OPENING_FOCUS",
+              "ATTENTION_PEAK",
+              "ATTENTION_DROP",
+              "ATTENTION_RECOVERY",
+              "SPATIAL_FOCUS_SHIFT",
+              "SCENE_TRANSITION_ALIGNMENT",
+              "FOCAL_COMPETITION",
+              "TEXT_SALIENCY_INTERACTION",
+              "FACE_SALIENCY_ALIGNMENT"
+            ]
+          },
+          "timestamp_start": { "type": "number" },
+          "timestamp_end": { "type": "number" },
+          "evidence": { "type": "object" },
+          "source_signals": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+          "interpretation": { "type": "string" }
+        }
+      }
+    },
+    "interpretation": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "limitations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["schema_version", "analysis_timestamp", "source_video", "nemar_model", "tinysalnet_model", "sample_counts"]
+    },
+    "telemetry": {
+      "type": "object",
+      "required": ["pure_computation_time_ms", "pure_computation_time_sec"]
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "feature_names": [
+    "motion_magnitude",
+    "motion_std",
+    "scene_cut_rate",
+    "time_since_cut",
+    "brightness_mean",
+    "brightness_std",
+    "contrast",
+    "visual_complexity",
+    "face_presence",
+    "text_presence",
+    "audio_rms",
+    "audio_silence_ratio",
+    "audio_spectral_centroid",
+    "audio_speech_presence"
+  ],
+  "feature_count": 14,
+  "feature_types": {
+    "motion_magnitude": "float",
+    "motion_std": "float",
+    "scene_cut_rate": "float",
+    "time_since_cut": "float",
+    "brightness_mean": "float",
+    "brightness_std": "float",
+    "contrast": "float",
+    "visual_complexity": "float",
+    "face_presence": "float",
+    "text_presence": "float",
+    "audio_rms": "float",
+    "audio_silence_ratio": "float",
+    "audio_spectral_centroid": "float",
+    "audio_speech_presence": "float"
+  },
+  "feature_ranges": {
+    "motion_magnitude": {
+      "min": 0.0,
+      "max": 0.1913,
+      "mean": 0.01,
+      "std": 0.0188
+    },
+    "motion_std": {
+      "min": 0.0,
+      "max": 0.2534,
+      "mean": 0.0101,
+      "std": 0.0246
+    },
+    "scene_cut_rate": {
+      "min": 0.0,
+      "max": 10.0,
+      "mean": 0.0267,
+      "std": 0.2918
+    },
+    "time_since_cut": {
+      "min": 0.0,
+      "max": 388.25,
+      "mean": 123.9291,
+      "std": 120.2728
+    },
+    "brightness_mean": {
+      "min": 0.0,
+      "max": 0.9957,
+      "mean": 0.7436,
+      "std": 0.1872
+    },
+    "brightness_std": {
+      "min": 0.0,
+      "max": 0.4319,
+      "mean": 0.0113,
+      "std": 0.0314
+    },
+    "contrast": {
+      "min": 0.0004,
+      "max": 0.4585,
+      "mean": 0.1664,
+      "std": 0.0864
+    },
+    "visual_complexity": {
+      "min": 0.0001,
+      "max": 19.0156,
+      "mean": 1.4219,
+      "std": 1.8506
+    },
+    "face_presence": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.026,
+      "std": 0.155
+    },
+    "text_presence": {
+      "min": 0.0,
+      "max": 0.5339,
+      "mean": 0.0908,
+      "std": 0.0773
+    },
+    "audio_rms": {
+      "min": 0.0,
+      "max": 0.257,
+      "mean": 0.1285,
+      "std": 0.0477
+    },
+    "audio_silence_ratio": {
+      "min": 0.0343,
+      "max": 1.0,
+      "mean": 0.1817,
+      "std": 0.1237
+    },
+    "audio_spectral_centroid": {
+      "min": 0.0,
+      "max": 4950.6,
+      "mean": 2067.4686,
+      "std": 727.6832
+    },
+    "audio_speech_presence": {
+      "min": 0.0,
+      "max": 0.8792,
+      "mean": 0.5035,
+      "std": 0.1243
+    }
+  },
+  "feature_importances": {
+    "time_since_cut": 0.1907,
+    "text_presence": 0.171,
+    "brightness_mean": 0.1505,
+    "visual_complexity": 0.1109,
+    "contrast": 0.077,
+    "motion_std": 0.0578,
+    "motion_magnitude": 0.0475,
+    "brightness_std": 0.0455,
+    "audio_spectral_centroid": 0.036,
+    "audio_speech_presence": 0.0351,
+    "audio_rms": 0.0341,
+    "audio_silence_ratio": 0.0307,
+    "face_presence": 0.0128,
+    "scene_cut_rate": 0.0005
+  }
+}

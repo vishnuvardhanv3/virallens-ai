@@ -1,0 +1,50 @@
+{
+  "total_participants": 27,
+  "train": {
+    "count": 19,
+    "participants": [
+      "sub-02",
+      "sub-03",
+      "sub-04",
+      "sub-05",
+      "sub-06",
+      "sub-07",
+      "sub-10",
+      "sub-11",
+      "sub-13",
+      "sub-14",
+      "sub-15",
+      "sub-17",
+      "sub-18",
+      "sub-19",
+      "sub-23",
+      "sub-25",
+      "sub-26",
+      "sub-27",
+      "sub-30"
+    ]
+  },
+  "validation": {
+    "count": 4,
+    "participants": [
+      "sub-09",
+      "sub-20",
+      "sub-22",
+      "sub-31"
+    ]
+  },
+  "test": {
+    "count": 4,
+    "participants": [
+      "sub-08",
+      "sub-12",
+      "sub-16",
+      "sub-21"
+    ]
+  },
+  "isolation_check": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0
+  }
+}

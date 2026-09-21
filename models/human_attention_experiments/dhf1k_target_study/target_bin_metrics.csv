@@ -1,0 +1,17 @@
+target_name,target_bin,sample_count,target_mean,pred_mean,mae,rmse,bias
+Target A,Bin 1 (Low: min-Q1),995,0.7653,0.8404,0.075,0.0819,0.075
+Target A,Bin 2 (Mid-Low: Q1-Q2),992,0.8255,0.8418,0.0185,0.0224,0.0163
+Target A,Bin 3 (Mid-High: Q2-Q3),991,0.8645,0.8427,0.0223,0.0258,-0.0218
+Target A,Bin 4 (High: Q3-max),992,0.9073,0.845,0.0623,0.0654,-0.0623
+Target B,Bin 1 (Low: min-Q1),994,0.4476,0.6205,0.1729,0.1914,0.1729
+Target B,Bin 2 (Mid-Low: Q1-Q2),992,0.5965,0.6237,0.0356,0.0441,0.0272
+Target B,Bin 3 (Mid-High: Q2-Q3),991,0.6823,0.627,0.0564,0.0653,-0.0553
+Target B,Bin 4 (High: Q3-max),993,0.7805,0.6307,0.1497,0.1568,-0.1497
+Target C,Bin 1 (Low: min-Q1),995,0.4719,0.6316,0.1596,0.1789,0.1596
+Target C,Bin 2 (Mid-Low: Q1-Q2),991,0.6142,0.6363,0.0322,0.0398,0.0221
+Target C,Bin 3 (Mid-High: Q2-Q3),992,0.6918,0.6398,0.0532,0.0611,-0.052
+Target C,Bin 4 (High: Q3-max),992,0.7754,0.6428,0.1326,0.1388,-0.1326
+Target D,Bin 1 (Low: min-Q1),997,0.734,0.7619,0.0279,0.0303,0.0279
+Target D,Bin 2 (Mid-Low: Q1-Q2),990,0.7575,0.7628,0.0065,0.0081,0.0053
+Target D,Bin 3 (Mid-High: Q2-Q3),990,0.7723,0.7631,0.0093,0.0107,-0.0091
+Target D,Bin 4 (High: Q3-max),993,0.7911,0.7639,0.0272,0.0288,-0.0272

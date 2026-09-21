@@ -1,0 +1,123 @@
+{
+  "feature_names": [
+    "motion_magnitude",
+    "motion_std",
+    "scene_cut_rate",
+    "time_since_cut",
+    "brightness_mean",
+    "brightness_std",
+    "contrast",
+    "visual_complexity",
+    "face_presence",
+    "text_presence",
+    "audio_rms",
+    "audio_silence_ratio",
+    "audio_spectral_centroid",
+    "audio_speech_presence"
+  ],
+  "feature_count": 14,
+  "target": "DHF1K-derived fixation concentration proxy",
+  "scaler": "StandardScaler (fitted strictly on training videos 001-600)",
+  "feature_ranges": {
+    "motion_magnitude": {
+      "min": 0.0,
+      "max": 0.2468,
+      "mean": 0.0281,
+      "std": 0.0252
+    },
+    "motion_std": {
+      "min": 0.0,
+      "max": 0.1785,
+      "mean": 0.0112,
+      "std": 0.0127
+    },
+    "scene_cut_rate": {
+      "min": 0.0,
+      "max": 8.0,
+      "mean": 0.0069,
+      "std": 0.1406
+    },
+    "time_since_cut": {
+      "min": 0.0,
+      "max": 51.25,
+      "mean": 10.4937,
+      "std": 7.599
+    },
+    "brightness_mean": {
+      "min": 0.0,
+      "max": 0.9982,
+      "mean": 0.4262,
+      "std": 0.1415
+    },
+    "brightness_std": {
+      "min": 0.0,
+      "max": 0.2773,
+      "mean": 0.0067,
+      "std": 0.0133
+    },
+    "contrast": {
+      "min": 0.0,
+      "max": 0.4292,
+      "mean": 0.2391,
+      "std": 0.0617
+    },
+    "visual_complexity": {
+      "min": 0.0,
+      "max": 9.3333,
+      "mean": 1.5442,
+      "std": 1.2928
+    },
+    "face_presence": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0592,
+      "std": 0.1696
+    },
+    "text_presence": {
+      "min": 0.0,
+      "max": 0.6432,
+      "mean": 0.164,
+      "std": 0.0912
+    },
+    "audio_rms": {
+      "min": 0.0,
+      "max": 0.7301,
+      "mean": 0.1076,
+      "std": 0.0953
+    },
+    "audio_silence_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.3058,
+      "std": 0.2855
+    },
+    "audio_spectral_centroid": {
+      "min": 0.0,
+      "max": 6383.07,
+      "mean": 1749.6822,
+      "std": 750.1986
+    },
+    "audio_speech_presence": {
+      "min": 0.0,
+      "max": 0.9545,
+      "mean": 0.5739,
+      "std": 0.1909
+    }
+  },
+  "feature_importances": {
+    "contrast": 0.1459,
+    "brightness_mean": 0.1335,
+    "text_presence": 0.1335,
+    "visual_complexity": 0.1185,
+    "audio_spectral_centroid": 0.0654,
+    "time_since_cut": 0.0649,
+    "motion_magnitude": 0.0632,
+    "audio_speech_presence": 0.0625,
+    "audio_silence_ratio": 0.0605,
+    "audio_rms": 0.053,
+    "motion_std": 0.0437,
+    "brightness_std": 0.0306,
+    "face_presence": 0.0244,
+    "scene_cut_rate": 0.0004
+  }
+}

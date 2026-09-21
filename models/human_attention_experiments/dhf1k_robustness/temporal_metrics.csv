@@ -1,0 +1,5 @@
+temporal_segment_id,temporal_segment,sample_count,target_mean,target_std,pred_mean,pred_std,mae,rmse,bias
+01_First_25pct,First 25% (0–25%),1024,0.8408,0.059,0.8424,0.0082,0.047,0.0589,0.0017
+02_Second_25pct,Second 25% (25–50%),984,0.841,0.0567,0.8428,0.0094,0.0451,0.0561,0.0017
+03_Third_25pct,Third 25% (50–75%),1007,0.8413,0.0556,0.8427,0.01,0.0443,0.0547,0.0014
+04_Final_25pct,Final 25% (75–100%),955,0.8479,0.0568,0.842,0.0103,0.0451,0.0558,-0.0059

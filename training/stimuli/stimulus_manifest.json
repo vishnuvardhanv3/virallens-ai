@@ -1,0 +1,57 @@
+[
+  {
+    "stimulus_id": "task-stim01",
+    "source_id": "VVAKFJ8VVp4",
+    "title": "Why are Stars Star-Shaped",
+    "duration": 208.5834,
+    "local_path": "E:\\new viral\\training\\stimuli\\task-stim01.mp4",
+    "fps": 23.976,
+    "width": 1280,
+    "height": 720,
+    "source_status": "available_verified"
+  },
+  {
+    "stimulus_id": "task-stim02",
+    "source_id": "oCEKMEeZXug",
+    "title": "How Modern Light Bulbs Work",
+    "duration": 142.9345,
+    "local_path": "E:\\new viral\\training\\stimuli\\task-stim02.mp4",
+    "fps": 23.976,
+    "width": 1280,
+    "height": 720,
+    "source_status": "available_verified"
+  },
+  {
+    "stimulus_id": "task-stim03",
+    "source_id": "zQGOcOUBi6s",
+    "title": "The Immune System Explained - Bacteria",
+    "duration": 468.76,
+    "local_path": "E:\\new viral\\training\\stimuli\\task-stim03.mp4",
+    "fps": 25.0,
+    "width": 1280,
+    "height": 720,
+    "source_status": "available_verified"
+  },
+  {
+    "stimulus_id": "task-stim04",
+    "source_id": "21eFwbb48sE",
+    "title": "Who Invented the Internet - And Why",
+    "duration": 392.04,
+    "local_path": "E:\\new viral\\training\\stimuli\\task-stim04.mp4",
+    "fps": 25.0,
+    "width": 1280,
+    "height": 720,
+    "source_status": "available_verified"
+  },
+  {
+    "stimulus_id": "task-stim05",
+    "source_id": "3IaYhG11ckA",
+    "title": "Why Do We Have More Boys Than Girls",
+    "duration": 153.25,
+    "local_path": "E:\\new viral\\training\\stimuli\\task-stim05.mp4",
+    "fps": 24.0,
+    "width": 1280,
+    "height": 720,
+    "source_status": "available_verified"
+  }
+]

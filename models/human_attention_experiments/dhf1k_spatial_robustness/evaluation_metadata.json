@@ -1,0 +1,27 @@
+{
+  "evaluation_name": "Phase 8 DHF1K Spatial Saliency Dense Validation",
+  "model_architecture": "TinySalNet (~96.5k parameters)",
+  "model_weights_path": "E:\\new viral\\models\\human_attention_experiments\\dhf1k_spatial\\spatial_model.pt",
+  "model_weights_sha256": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+  "validation_videos": "601-700 (100 videos)",
+  "dense_sampling_rate": "1 frame per second (step=30 frames)",
+  "total_evaluated_frames": 2057,
+  "resolution_tested": [
+    160,
+    90
+  ],
+  "device_used": "cpu",
+  "random_seed": 42,
+  "compute_profile": {
+    "total_dense_frames_evaluated": 2057,
+    "total_evaluation_time_seconds": 216.55,
+    "average_pipeline_time_per_frame_ms": 105.28,
+    "average_pure_inference_latency_ms": 12.13,
+    "pipeline_throughput_fps": 9.5,
+    "pure_model_throughput_fps": 82.41,
+    "phase7_sparse_frames": 400,
+    "phase7_eval_time_seconds": 9.62,
+    "dense_to_sparse_frame_ratio": 5.14,
+    "device": "cpu"
+  }
+}

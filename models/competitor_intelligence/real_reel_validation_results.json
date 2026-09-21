@@ -1,0 +1,274 @@
+{
+  "timestamp": "2026-09-16T10:54:42.866652",
+  "competitors_evaluated": 32,
+  "htdyr": {
+    "video_label": "htdyr",
+    "video_path": "E:\\new viral\\htdyr.mp4",
+    "latencies": {
+      "computation_ms": 2.92,
+      "serialization_ms": 8.935,
+      "report_generation_ms": 0.215,
+      "total_ms": 12.07
+    },
+    "target_profile": {
+      "entity": "Superhero",
+      "niche": "entertainment",
+      "edit_type": "action montage",
+      "duration": 28.0
+    },
+    "verified_competitor_count": 32,
+    "unique_creators": 22,
+    "subgroups": {
+      "same_entity_and_edit_type": 0,
+      "same_edit_type": 21,
+      "all_verified": 32,
+      "highest_reach_same_edit_type": 11
+    },
+    "recurring_patterns_count": 19,
+    "recurring_patterns_sample": [
+      {
+        "pattern": "Opening Visual Focal Anchor",
+        "subgroup": "same_edit_type",
+        "ratio": "3/21",
+        "target": "present",
+        "strength": "weak_observed_pattern"
+      },
+      {
+        "pattern": "Early Typography Hook",
+        "subgroup": "same_edit_type",
+        "ratio": "19/21",
+        "target": "present",
+        "strength": "strong_observed_pattern"
+      },
+      {
+        "pattern": "Early Human Presence",
+        "subgroup": "same_edit_type",
+        "ratio": "3/21",
+        "target": "absent",
+        "strength": "weak_observed_pattern"
+      },
+      {
+        "pattern": "Kinetic Cut Pacing",
+        "subgroup": "same_edit_type",
+        "ratio": "13/21",
+        "target": "absent",
+        "strength": "moderate_observed_pattern"
+      },
+      {
+        "pattern": "Concentrated Opening Spatial Saliency",
+        "subgroup": "same_edit_type",
+        "ratio": "0/21",
+        "target": "present",
+        "strength": "weak_observed_pattern"
+      }
+    ],
+    "gap_analysis_count": 11,
+    "creative_implications_count": 5,
+    "creative_implications_sample": [
+      {
+        "pattern": "Kinetic Cut Pacing",
+        "recommendation": "Consider introducing a scene reframe, match cut, or focal cutaway every 1.5s to 2.5s to maintain kinetic visual progression.",
+        "evidence": "13/21 (61.9%) competitors in the 'same_edit_type' subgroup exhibit kinetic cut pacing.",
+        "limitation": "Observational comparison within the selected verified competitor group; does not establish a causal relationship with viewer retention or distribution."
+      },
+      {
+        "pattern": "Dynamic Opening Visual Motion",
+        "recommendation": "Consider testing creative variants incorporating 'Dynamic Opening Visual Motion' to align with verified peer conventions.",
+        "evidence": "14/21 (66.7%) competitors in the 'same_edit_type' subgroup exhibit dynamic opening visual motion.",
+        "limitation": "Observational comparison within the selected verified competitor group; does not establish a causal relationship with viewer retention or distribution."
+      },
+      {
+        "pattern": "Dynamic Opening Visual Motion",
+        "recommendation": "Consider testing creative variants incorporating 'Dynamic Opening Visual Motion' to align with verified peer conventions.",
+        "evidence": "16/32 (50.0%) competitors in the 'all_verified' subgroup exhibit dynamic opening visual motion.",
+        "limitation": "Observational comparison within the selected verified competitor group; does not establish a causal relationship with viewer retention or distribution."
+      }
+    ],
+    "reach_summary": {
+      "valid_reach_count": 32,
+      "cohort_median_views": 1763486.0,
+      "observations_count": 4
+    },
+    "provenance": {
+      "target_reel_id": "htdyr",
+      "competitor_ids": [
+        "C3QYcm6tCYd",
+        "C_ntd0bIh80",
+        "CvnININBmHo",
+        "DCMLgaESvV7",
+        "DCgW0Hiq5T9",
+        "DD2Rej1p9mF",
+        "DH58fTGtgXO",
+        "DHtvE9Vovvx",
+        "DI1jeqetIW1",
+        "DI32rJXyzAG",
+        "DIEJFXzSnU7",
+        "DK0XtyYzEA0",
+        "DKeoUm9yiBV",
+        "DNXTLRQROi0",
+        "DOEMFWyDLI6",
+        "DONo_VlE4sw",
+        "DRvoqG1kTWO",
+        "DU6sQlYDrUv",
+        "DU6tgztgYaT",
+        "DU8apsrk4bm",
+        "DUMOJBnj8VH",
+        "DUW4iGHgNAK",
+        "DUn2HE7DK0I",
+        "DUpJkHDAIVK",
+        "DUyfzgECIYv",
+        "DVH_IoPkYqN",
+        "DVKyWoiD7LJ",
+        "DVQ-iYijgie",
+        "c1",
+        "c_spidey1",
+        "c_spidey2",
+        "cand_1"
+      ],
+      "subgroups_evaluated": [
+        "same_entity_and_edit_type",
+        "same_edit_type",
+        "all_verified",
+        "highest_reach_same_edit_type"
+      ],
+      "zero_network_calls": true,
+      "zero_duplicate_inference": true
+    },
+    "report_preview_has_section": true
+  },
+  "upload_jvxawbcy": {
+    "video_label": "upload_jvxawbcy",
+    "video_path": "C:\\Users\\vishn\\AppData\\Local\\Temp\\virallens_uploads\\upload_jvxawbcy.mp4",
+    "latencies": {
+      "computation_ms": 2.136,
+      "serialization_ms": 8.301,
+      "report_generation_ms": 0.246,
+      "total_ms": 10.683
+    },
+    "target_profile": {
+      "entity": "Spider-Man",
+      "niche": "superhero",
+      "edit_type": "action montage",
+      "duration": 15.0
+    },
+    "verified_competitor_count": 32,
+    "unique_creators": 22,
+    "subgroups": {
+      "same_entity_and_edit_type": 10,
+      "same_edit_type": 21,
+      "all_verified": 32,
+      "highest_reach_same_edit_type": 5
+    },
+    "recurring_patterns_count": 19,
+    "recurring_patterns_sample": [
+      {
+        "pattern": "Opening Visual Focal Anchor",
+        "subgroup": "same_entity_and_edit_type",
+        "ratio": "0/10",
+        "target": "present",
+        "strength": "weak_observed_pattern"
+      },
+      {
+        "pattern": "Early Typography Hook",
+        "subgroup": "same_entity_and_edit_type",
+        "ratio": "8/10",
+        "target": "present",
+        "strength": "strong_observed_pattern"
+      },
+      {
+        "pattern": "Early Human Presence",
+        "subgroup": "same_entity_and_edit_type",
+        "ratio": "0/10",
+        "target": "absent",
+        "strength": "weak_observed_pattern"
+      },
+      {
+        "pattern": "Kinetic Cut Pacing",
+        "subgroup": "same_entity_and_edit_type",
+        "ratio": "4/10",
+        "target": "absent",
+        "strength": "weak_observed_pattern"
+      },
+      {
+        "pattern": "Concentrated Opening Spatial Saliency",
+        "subgroup": "same_entity_and_edit_type",
+        "ratio": "0/10",
+        "target": "present",
+        "strength": "weak_observed_pattern"
+      }
+    ],
+    "gap_analysis_count": 14,
+    "creative_implications_count": 5,
+    "creative_implications_sample": [
+      {
+        "pattern": "Dynamic Opening Visual Motion",
+        "recommendation": "Consider testing creative variants incorporating 'Dynamic Opening Visual Motion' to align with verified peer conventions.",
+        "evidence": "8/10 (80.0%) competitors in the 'same_entity_and_edit_type' subgroup exhibit dynamic opening visual motion.",
+        "limitation": "Observational comparison within the selected verified competitor group; does not establish a causal relationship with viewer retention or distribution."
+      },
+      {
+        "pattern": "Kinetic Cut Pacing",
+        "recommendation": "Consider introducing a scene reframe, match cut, or focal cutaway every 1.5s to 2.5s to maintain kinetic visual progression.",
+        "evidence": "13/21 (61.9%) competitors in the 'same_edit_type' subgroup exhibit kinetic cut pacing.",
+        "limitation": "Observational comparison within the selected verified competitor group; does not establish a causal relationship with viewer retention or distribution."
+      },
+      {
+        "pattern": "Dynamic Opening Visual Motion",
+        "recommendation": "Consider testing creative variants incorporating 'Dynamic Opening Visual Motion' to align with verified peer conventions.",
+        "evidence": "14/21 (66.7%) competitors in the 'same_edit_type' subgroup exhibit dynamic opening visual motion.",
+        "limitation": "Observational comparison within the selected verified competitor group; does not establish a causal relationship with viewer retention or distribution."
+      }
+    ],
+    "reach_summary": {
+      "valid_reach_count": 32,
+      "cohort_median_views": 1763486.0,
+      "observations_count": 4
+    },
+    "provenance": {
+      "target_reel_id": "upload_jvxawbcy",
+      "competitor_ids": [
+        "C3QYcm6tCYd",
+        "C_ntd0bIh80",
+        "CvnININBmHo",
+        "DCMLgaESvV7",
+        "DCgW0Hiq5T9",
+        "DD2Rej1p9mF",
+        "DH58fTGtgXO",
+        "DHtvE9Vovvx",
+        "DI1jeqetIW1",
+        "DI32rJXyzAG",
+        "DIEJFXzSnU7",
+        "DK0XtyYzEA0",
+        "DKeoUm9yiBV",
+        "DNXTLRQROi0",
+        "DOEMFWyDLI6",
+        "DONo_VlE4sw",
+        "DRvoqG1kTWO",
+        "DU6sQlYDrUv",
+        "DU6tgztgYaT",
+        "DU8apsrk4bm",
+        "DUMOJBnj8VH",
+        "DUW4iGHgNAK",
+        "DUn2HE7DK0I",
+        "DUpJkHDAIVK",
+        "DUyfzgECIYv",
+        "DVH_IoPkYqN",
+        "DVKyWoiD7LJ",
+        "DVQ-iYijgie",
+        "c1",
+        "c_spidey1",
+        "c_spidey2",
+        "cand_1"
+      ],
+      "subgroups_evaluated": [
+        "same_entity_and_edit_type",
+        "same_edit_type",
+        "all_verified",
+        "highest_reach_same_edit_type"
+      ],
+      "zero_network_calls": true,
+      "zero_duplicate_inference": true
+    },
+    "report_preview_has_section": true
+  }
+}

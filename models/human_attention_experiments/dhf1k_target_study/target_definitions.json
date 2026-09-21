@@ -1,0 +1,38 @@
+[
+  {
+    "target": "Target A (Baseline)",
+    "formula": "T_A = clip(1.0 - min(1.0, 2.0 * std(radial_dist)), 0.0, 1.0)",
+    "raw_statistic": "std(radial_dist) from window centroid in [0, 1]^2 screen space",
+    "coord_range": "[0, 1] x [0, 1] normalized screen space",
+    "norm_reference": "Empirical factor 2.0 from Phase 2 baseline",
+    "norm_source": "Historical Phase 2 baseline parameter",
+    "semantics": "Concentration (higher = tighter radial clustering)"
+  },
+  {
+    "target": "Target B (Fixation Concentration)",
+    "formula": "T_B = clip(1.0 - min(1.0, raw_B / S_ref), 0.0, 1.0)",
+    "raw_statistic": "raw_B = sqrt(var(x) + var(y)) [total bivariate standard deviation]",
+    "coord_range": "[0, 1] x [0, 1] normalized screen space",
+    "norm_reference": "S_ref = 1/sqrt(6) = 0.4082 (theoretical uniform 2D distribution)",
+    "norm_source": "Theoretical uniform distribution + train-distribution audit",
+    "semantics": "Concentration (higher = lower orthogonal bivariate spatial variance)"
+  },
+  {
+    "target": "Target C (Saliency Concentration)",
+    "formula": "T_C = clip(1.0 - min(1.0, raw_C / S_ref), 0.0, 1.0)",
+    "raw_statistic": "raw_C = sqrt(sum p * [(x - cx)^2 + (y - cy)^2]) [continuous RMS radial distance from center of mass]",
+    "coord_range": "[0, 1] x [0, 1] normalized continuous density mass",
+    "norm_reference": "S_ref = 1/sqrt(6) = 0.4082 (theoretical uniform continuous mass)",
+    "norm_source": "Theoretical continuous uniform distribution + train-distribution audit",
+    "semantics": "Concentration (higher = tighter density mass around center of mass)"
+  },
+  {
+    "target": "Target D (Saliency Entropy Dispersion)",
+    "formula": "T_D = H(M) / log2(360 * 640)",
+    "raw_statistic": "raw_D = H(M) = -sum p * log2(p) [Shannon spatial entropy in bits]",
+    "coord_range": "360 x 640 discrete pixel grid",
+    "norm_reference": "H_max = log2(360 * 640) = 17.8138 bits (maximum uniform discrete entropy)",
+    "norm_source": "Theoretical resolution limit (360 x 640)",
+    "semantics": "Dispersion (higher = flatter, more dispersed attention; strictly non-inverted)"
+  }
+]

@@ -1,0 +1,4 @@
+reviewer_id,trials_A,trials_B,time_A,time_B,delta_time,pct_change_time,conf_A,conf_B,delta_conf,use_A,use_B,delta_use,insp_rate_A,insp_rate_B,delta_insp_rate
+reviewer_01,40,40,6.31,5.07,-1.24,-19.6,3.73,4.3,0.57,3.45,4.15,0.7,0.125,0.025,-0.1
+reviewer_02,40,40,5.93,3.95,-1.99,-33.5,3.98,4.58,0.6,3.33,4.15,0.83,0.125,0.05,-0.075
+reviewer_03,40,40,7.44,5.51,-1.93,-25.9,3.42,4.25,0.83,3.5,4.53,1.03,0.175,0.025,-0.15

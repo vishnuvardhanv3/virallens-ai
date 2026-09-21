@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ViralLensDiscoveryCandidateSchema",
+  "description": "Formal JSON schema defining canonical Instagram discovery candidates and telemetry in ViralLens AI.",
+  "type": "object",
+  "required": [
+    "reel_id",
+    "reel_url",
+    "source_provider"
+  ],
+  "properties": {
+    "reel_id": {
+      "type": "string",
+      "description": "Standard alphanumeric Instagram shortcode / Reel identifier (e.g. C2_vRNYhykr). Never contains query params."
+    },
+    "reel_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical Instagram Reel URL in the format https://www.instagram.com/reel/{shortcode}/."
+    },
+    "creator": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Instagram creator username or null if unavailable. Never inferred or fabricated."
+    },
+    "caption": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Reel post caption or null if unavailable."
+    },
+    "reach": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "description": "Genuine video plays or views count as positive integer. Strictly null if unavailable (never 0, never synthetic)."
+    },
+    "timestamp": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ISO timestamp or unix epoch string of Reel publication. Never inferred."
+    },
+    "media_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri",
+      "description": "Direct MP4 download URL or null if provider does not legitimately expose it. Never fabricated."
+    },
+    "source_provider": {
+      "type": "string",
+      "enum": [
+        "apify",
+        "agent_reach",
+        "mock"
+      ],
+      "description": "The provider that originally discovered this candidate."
+    },
+    "source_query": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The search query that returned this candidate."
+    },
+    "metadata_completeness": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Calculated completeness score [0.0 - 1.0] across canonical fields."
+    },
+    "raw_provenance": {
+      "type": "object",
+      "description": "Raw provider responses, merged source_providers, source_queries, and secondary engagement metrics.",
+      "properties": {
+        "source_providers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_queries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "likes": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "comments": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "thumbnail_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

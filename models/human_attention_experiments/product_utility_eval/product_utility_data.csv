@@ -1,0 +1,241 @@
+reviewer_id,item_id,video_id,condition,condition_order,task_id,completion_time_sec,confidence_score,usefulness_score,focal_region_response,additional_inspection_required,optional_comment
+reviewer_01,item_01,htdyr_uploaded,Condition_A,1,Task_A,5.47,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_01,htdyr_uploaded,Condition_A,1,Task_B,7.31,3,3,2.00s,False,Estimated from overall timeline
+reviewer_01,item_01,htdyr_uploaded,Condition_A,1,Task_C,5.59,3,4,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_01,htdyr_uploaded,Condition_A,1,Task_D,7.88,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_01,htdyr_uploaded,Condition_B,1,Task_A,2.06,5,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_01,htdyr_uploaded,Condition_B,1,Task_B,3.45,4,4,2.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_01,htdyr_uploaded,Condition_B,1,Task_C,2.96,4,3,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_01,htdyr_uploaded,Condition_B,1,Task_D,5.58,5,4,composition_audit_completed,True,Clear focal centroid simplifies composition critique.
+reviewer_03,item_01,htdyr_uploaded,Condition_A,1,Task_A,5.19,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_03,item_01,htdyr_uploaded,Condition_A,1,Task_B,6.99,3,4,2.00s,False,Estimated from overall timeline
+reviewer_03,item_01,htdyr_uploaded,Condition_A,1,Task_C,5.37,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_01,htdyr_uploaded,Condition_A,1,Task_D,7.55,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_02,htdyr_uploaded,Condition_A,2,Task_A,5.32,4,3,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_02,htdyr_uploaded,Condition_A,2,Task_B,5.45,4,3,15.00s,False,Estimated from overall timeline
+reviewer_01,item_02,htdyr_uploaded,Condition_A,2,Task_C,4.13,3,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_02,htdyr_uploaded,Condition_A,2,Task_D,7.59,4,4,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_02,htdyr_uploaded,Condition_B,2,Task_A,2.68,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_02,htdyr_uploaded,Condition_B,2,Task_B,4.45,4,4,15.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_02,htdyr_uploaded,Condition_B,2,Task_C,2.84,5,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_02,htdyr_uploaded,Condition_B,2,Task_D,5.96,4,5,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_02,htdyr_uploaded,Condition_B,2,Task_A,4.13,5,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_03,item_02,htdyr_uploaded,Condition_B,2,Task_B,5.3,5,4,15.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_02,htdyr_uploaded,Condition_B,2,Task_C,3.91,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_02,htdyr_uploaded,Condition_B,2,Task_D,7.24,4,5,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_03,htdyr_uploaded,Condition_A,3,Task_A,6.01,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_03,htdyr_uploaded,Condition_A,3,Task_B,6.1,4,4,25.00s,False,Estimated from overall timeline
+reviewer_01,item_03,htdyr_uploaded,Condition_A,3,Task_C,4.54,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_03,htdyr_uploaded,Condition_A,3,Task_D,8.18,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_03,htdyr_uploaded,Condition_B,3,Task_A,3.42,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_03,htdyr_uploaded,Condition_B,3,Task_B,4.19,4,4,25.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_03,htdyr_uploaded,Condition_B,3,Task_C,3.3,5,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_03,htdyr_uploaded,Condition_B,3,Task_D,4.27,4,5,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_03,htdyr_uploaded,Condition_A,3,Task_A,4.77,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_03,item_03,htdyr_uploaded,Condition_A,3,Task_B,8.65,3,4,25.00s,False,Estimated from overall timeline
+reviewer_03,item_03,htdyr_uploaded,Condition_A,3,Task_C,5.36,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_03,htdyr_uploaded,Condition_A,3,Task_D,8.93,4,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_04,apify_C2_vRNYhykr.mp4,Condition_A,4,Task_A,5.71,5,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_04,apify_C2_vRNYhykr.mp4,Condition_A,4,Task_B,6.13,3,4,5.00s,False,Estimated from overall timeline
+reviewer_01,item_04,apify_C2_vRNYhykr.mp4,Condition_A,4,Task_C,5.41,4,4,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_04,apify_C2_vRNYhykr.mp4,Condition_A,4,Task_D,6.87,4,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_A,2.5,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_B,3.72,5,4,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_C,3.08,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_D,5.11,5,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_A,4.05,4,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_03,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_B,5.39,4,5,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_C,3.88,5,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_04,apify_C2_vRNYhykr.mp4,Condition_B,4,Task_D,7.05,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_A,5.58,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_B,6.33,4,4,8.00s,False,Estimated from overall timeline
+reviewer_01,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_C,4.44,3,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_D,6.55,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_05,apify_C2_vRNYhykr.mp4,Condition_B,5,Task_A,3.25,5,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_05,apify_C2_vRNYhykr.mp4,Condition_B,5,Task_B,3.89,4,4,8.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_05,apify_C2_vRNYhykr.mp4,Condition_B,5,Task_C,2.72,5,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_05,apify_C2_vRNYhykr.mp4,Condition_B,5,Task_D,4.95,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_A,5.07,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_03,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_B,7.32,3,3,8.00s,False,Estimated from overall timeline
+reviewer_03,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_C,5.19,3,4,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_05,apify_C2_vRNYhykr.mp4,Condition_A,5,Task_D,8.09,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_06,apify_C2_vRNYhykr.mp4,Condition_A,6,Task_A,5.42,5,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_06,apify_C2_vRNYhykr.mp4,Condition_A,6,Task_B,6.91,4,3,15.00s,False,Estimated from overall timeline
+reviewer_01,item_06,apify_C2_vRNYhykr.mp4,Condition_A,6,Task_C,4.71,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_06,apify_C2_vRNYhykr.mp4,Condition_A,6,Task_D,7.74,4,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_A,3.16,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_B,4.16,4,4,15.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_C,2.86,5,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_D,4.08,5,4,composition_audit_completed,True,Clear focal centroid simplifies composition critique.
+reviewer_03,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_A,3.28,4,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_03,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_B,4.95,4,4,15.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_C,4.55,5,5,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_06,apify_C2_vRNYhykr.mp4,Condition_B,6,Task_D,6.8,4,5,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_A,5.36,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_B,6.97,4,4,5.00s,False,Estimated from overall timeline
+reviewer_01,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_C,4.68,3,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_D,7.79,4,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_07,apify_C3QYcm6tCYd.mp4,Condition_B,7,Task_A,3.4,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_07,apify_C3QYcm6tCYd.mp4,Condition_B,7,Task_B,5.2,4,4,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_07,apify_C3QYcm6tCYd.mp4,Condition_B,7,Task_C,3.41,5,5,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_07,apify_C3QYcm6tCYd.mp4,Condition_B,7,Task_D,5.34,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_A,7.3,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_03,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_B,7.96,4,3,5.00s,False,Estimated from overall timeline
+reviewer_03,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_C,6.5,3,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_07,apify_C3QYcm6tCYd.mp4,Condition_A,7,Task_D,9.56,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_08,apify_C4coCnQr9YE.mp4,Condition_A,8,Task_A,6.08,4,3,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_08,apify_C4coCnQr9YE.mp4,Condition_A,8,Task_B,7.81,3,4,3.00s,False,Estimated from overall timeline
+reviewer_01,item_08,apify_C4coCnQr9YE.mp4,Condition_A,8,Task_C,5.62,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_08,apify_C4coCnQr9YE.mp4,Condition_A,8,Task_D,8.17,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_A,3.07,5,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_B,4.18,5,4,3.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_C,3.73,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_D,5.53,5,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_A,3.54,4,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_03,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_B,6.14,5,4,3.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_C,4.31,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_08,apify_C4coCnQr9YE.mp4,Condition_B,8,Task_D,7.86,4,5,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_A,5.9,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_B,7.4,3,4,6.00s,False,Estimated from overall timeline
+reviewer_01,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_C,4.78,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_D,8.8,4,4,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_09,apify_CvnININBmHo.mp4,Condition_B,9,Task_A,3.03,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_09,apify_CvnININBmHo.mp4,Condition_B,9,Task_B,5.17,4,4,6.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_09,apify_CvnININBmHo.mp4,Condition_B,9,Task_C,3.67,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_09,apify_CvnININBmHo.mp4,Condition_B,9,Task_D,5.91,5,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_A,5.61,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_03,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_B,7.76,3,4,6.00s,False,Estimated from overall timeline
+reviewer_03,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_C,6.34,3,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_09,apify_CvnININBmHo.mp4,Condition_A,9,Task_D,8.54,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_10,apify_DCgW0Hiq5T9.mp4,Condition_A,10,Task_A,6.42,4,4,dominant_face_actor,False,Manual visual scan of quadrants
+reviewer_01,item_10,apify_DCgW0Hiq5T9.mp4,Condition_A,10,Task_B,7.09,3,3,12.00s,False,Estimated from overall timeline
+reviewer_01,item_10,apify_DCgW0Hiq5T9.mp4,Condition_A,10,Task_C,5.11,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_01,item_10,apify_DCgW0Hiq5T9.mp4,Condition_A,10,Task_D,8.94,4,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_02,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_A,3.78,5,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_02,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_B,4.15,5,4,12.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_02,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_C,4.14,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_02,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_D,5.51,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_03,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_A,3.49,5,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_03,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_B,6.07,4,5,12.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_C,4.65,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_10,apify_DCgW0Hiq5T9.mp4,Condition_B,10,Task_D,7.25,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_11,apify_C_ntd0bIh80.mp4,Condition_B,11,Task_A,3.51,5,4,center,False,Immediate focal guidance
+reviewer_01,item_11,apify_C_ntd0bIh80.mp4,Condition_B,11,Task_B,4.6,4,4,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_11,apify_C_ntd0bIh80.mp4,Condition_B,11,Task_C,3.64,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_11,apify_C_ntd0bIh80.mp4,Condition_B,11,Task_D,6.23,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_02,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_A,5.39,5,3,center,False,Manual visual scan of quadrants
+reviewer_02,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_B,5.73,4,4,5.00s,False,Estimated from overall timeline
+reviewer_02,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_C,4.49,4,4,single_dominant,False,Harder to judge without spatial density data
+reviewer_02,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_D,7.74,4,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_A,6.47,4,4,center,False,Manual visual scan of quadrants
+reviewer_03,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_B,7.94,4,3,5.00s,False,Estimated from overall timeline
+reviewer_03,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_C,5.05,3,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_11,apify_C_ntd0bIh80.mp4,Condition_A,11,Task_D,9.32,4,4,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_A,3.89,5,4,center,False,Immediate focal guidance
+reviewer_01,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_B,5.16,4,4,4.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_C,3.78,5,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_D,5.58,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_02,item_12,apify_DBbW7y9KRGf.mp4,Condition_A,12,Task_A,5.01,4,4,center,False,Manual visual scan of quadrants
+reviewer_02,item_12,apify_DBbW7y9KRGf.mp4,Condition_A,12,Task_B,5.28,4,4,4.00s,False,Estimated from overall timeline
+reviewer_02,item_12,apify_DBbW7y9KRGf.mp4,Condition_A,12,Task_C,3.94,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_02,item_12,apify_DBbW7y9KRGf.mp4,Condition_A,12,Task_D,6.37,4,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_A,3.99,4,5,center,False,Immediate focal guidance
+reviewer_03,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_B,5.44,4,5,4.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_C,4.49,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_12,apify_DBbW7y9KRGf.mp4,Condition_B,12,Task_D,7.35,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_13,apify_DCMLgaESvV7.mp4,Condition_B,13,Task_A,3.02,5,5,center,False,Immediate focal guidance
+reviewer_01,item_13,apify_DCMLgaESvV7.mp4,Condition_B,13,Task_B,4.74,4,4,8.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_13,apify_DCMLgaESvV7.mp4,Condition_B,13,Task_C,4.7,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_13,apify_DCMLgaESvV7.mp4,Condition_B,13,Task_D,5.82,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_02,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_A,4.7,4,3,center,False,Manual visual scan of quadrants
+reviewer_02,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_B,5.52,3,3,8.00s,False,Estimated from overall timeline
+reviewer_02,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_C,4.54,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_02,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_D,7.39,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_A,6.95,4,4,center,False,Manual visual scan of quadrants
+reviewer_03,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_B,7.41,3,3,8.00s,False,Estimated from overall timeline
+reviewer_03,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_C,6.11,3,4,single_dominant,False,Harder to judge without spatial density data
+reviewer_03,item_13,apify_DCMLgaESvV7.mp4,Condition_A,13,Task_D,9.21,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_A,3.26,5,4,center,False,Immediate focal guidance
+reviewer_01,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_B,5.11,4,4,6.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_C,3.85,4,4,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_D,6.03,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_02,item_14,apify_DD2Rej1p9mF.mp4,Condition_A,14,Task_A,3.89,5,4,center,False,Manual visual scan of quadrants
+reviewer_02,item_14,apify_DD2Rej1p9mF.mp4,Condition_A,14,Task_B,6.26,3,3,6.00s,False,Estimated from overall timeline
+reviewer_02,item_14,apify_DD2Rej1p9mF.mp4,Condition_A,14,Task_C,3.62,4,3,single_dominant,False,Harder to judge without spatial density data
+reviewer_02,item_14,apify_DD2Rej1p9mF.mp4,Condition_A,14,Task_D,6.3,4,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_A,4.95,4,5,center,False,Immediate focal guidance
+reviewer_03,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_B,5.26,4,5,6.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_C,4.57,4,5,single_dominant,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_14,apify_DD2Rej1p9mF.mp4,Condition_B,14,Task_D,8.27,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_01,item_15,apify_DCM1uAEoIWA.mp4,Condition_B,15,Task_A,4.02,5,5,center,False,Immediate focal guidance
+reviewer_01,item_15,apify_DCM1uAEoIWA.mp4,Condition_B,15,Task_B,5.24,5,4,2.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_15,apify_DCM1uAEoIWA.mp4,Condition_B,15,Task_C,4.24,4,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_15,apify_DCM1uAEoIWA.mp4,Condition_B,15,Task_D,6.68,4,4,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_02,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_A,4.05,5,4,center,False,Manual visual scan of quadrants
+reviewer_02,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_B,7.05,4,4,2.00s,False,Estimated from overall timeline
+reviewer_02,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_C,4.52,4,2,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_02,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_D,7.0,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_A,7.15,3,4,center,False,Manual visual scan of quadrants
+reviewer_03,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_B,8.71,3,4,2.00s,False,Estimated from overall timeline
+reviewer_03,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_C,6.35,4,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_03,item_15,apify_DCM1uAEoIWA.mp4,Condition_A,15,Task_D,11.25,3,4,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_A,3.51,4,5,center,False,Immediate focal guidance
+reviewer_01,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_B,5.46,4,4,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_C,4.53,4,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_D,6.62,5,5,composition_audit_completed,False,Clear focal centroid simplifies composition critique.
+reviewer_02,item_16,apify_DCM1uAEoIWA.mp4,Condition_A,16,Task_A,5.49,5,3,center,False,Manual visual scan of quadrants
+reviewer_02,item_16,apify_DCM1uAEoIWA.mp4,Condition_A,16,Task_B,5.73,3,4,5.00s,False,Estimated from overall timeline
+reviewer_02,item_16,apify_DCM1uAEoIWA.mp4,Condition_A,16,Task_C,5.18,4,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_02,item_16,apify_DCM1uAEoIWA.mp4,Condition_A,16,Task_D,6.8,5,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_A,4.98,5,5,center,False,Immediate focal guidance
+reviewer_03,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_B,6.11,4,4,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_C,4.23,4,5,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_16,apify_DCM1uAEoIWA.mp4,Condition_B,16,Task_D,7.78,4,5,composition_audit_completed,True,Clear focal centroid simplifies composition critique.
+reviewer_01,item_17,apify_C3CuHOxx15T.mp4,Condition_B,17,Task_A,4.24,5,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_01,item_17,apify_C3CuHOxx15T.mp4,Condition_B,17,Task_B,6.37,4,4,5.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_17,apify_C3CuHOxx15T.mp4,Condition_B,17,Task_C,4.2,5,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_17,apify_C3CuHOxx15T.mp4,Condition_B,17,Task_D,7.54,4,4,composition_audit_completed,False,Spatial map assists in identifying subtitle competition with facial focus.
+reviewer_02,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_A,4.89,4,3,text_graphic_overlay,False,Manual visual scan of quadrants
+reviewer_02,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_B,6.95,4,3,5.00s,False,Estimated from overall timeline
+reviewer_02,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_C,5.68,4,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_02,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_D,6.96,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_A,7.13,4,5,text_graphic_overlay,False,Manual visual scan of quadrants
+reviewer_03,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_B,9.0,3,4,5.00s,False,Estimated from overall timeline
+reviewer_03,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_C,6.82,3,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_03,item_17,apify_C3CuHOxx15T.mp4,Condition_A,17,Task_D,10.12,3,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_A,4.71,4,4,dominant_face_actor,False,Immediate focal guidance
+reviewer_01,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_B,5.26,4,4,3.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_C,4.59,4,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_D,7.76,5,4,composition_audit_completed,False,Spatial map assists in identifying subtitle competition with facial focus.
+reviewer_02,item_18,apify_C94Pwuoyu_V.mp4,Condition_A,18,Task_A,6.23,5,4,text_graphic_overlay,False,Manual visual scan of quadrants
+reviewer_02,item_18,apify_C94Pwuoyu_V.mp4,Condition_A,18,Task_B,6.36,3,3,3.00s,False,Estimated from overall timeline
+reviewer_02,item_18,apify_C94Pwuoyu_V.mp4,Condition_A,18,Task_C,4.67,4,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_02,item_18,apify_C94Pwuoyu_V.mp4,Condition_A,18,Task_D,7.99,4,3,composition_audit_completed,False,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_A,5.31,4,5,dominant_face_actor,False,Immediate focal guidance
+reviewer_03,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_B,6.08,4,5,3.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_C,4.67,5,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_18,apify_C94Pwuoyu_V.mp4,Condition_B,18,Task_D,7.52,4,4,composition_audit_completed,False,Spatial map assists in identifying subtitle competition with facial focus.
+reviewer_01,item_19,apify_C_0V-myyZsh.mp4,Condition_B,19,Task_A,3.67,5,5,center,False,Immediate focal guidance
+reviewer_01,item_19,apify_C_0V-myyZsh.mp4,Condition_B,19,Task_B,5.95,4,4,8.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_19,apify_C_0V-myyZsh.mp4,Condition_B,19,Task_C,4.67,4,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_19,apify_C_0V-myyZsh.mp4,Condition_B,19,Task_D,7.88,4,4,composition_audit_completed,False,Spatial map assists in identifying subtitle competition with facial focus.
+reviewer_02,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_A,7.13,5,4,center,False,Manual visual scan of quadrants
+reviewer_02,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_B,7.07,3,3,8.00s,False,Estimated from overall timeline
+reviewer_02,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_C,4.68,5,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_02,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_D,9.08,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_A,7.71,4,4,center,False,Manual visual scan of quadrants
+reviewer_03,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_B,9.93,3,3,8.00s,False,Estimated from overall timeline
+reviewer_03,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_C,6.68,4,3,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_03,item_19,apify_C_0V-myyZsh.mp4,Condition_A,19,Task_D,10.41,3,3,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_01,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_A,3.86,4,5,center,False,Immediate focal guidance
+reviewer_01,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_B,5.64,4,4,3.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_01,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_C,5.3,4,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_01,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_D,7.89,4,4,composition_audit_completed,True,Spatial map assists in identifying subtitle competition with facial focus.
+reviewer_02,item_20,apify_DCM1uAEoIWA.mp4,Condition_A,20,Task_A,7.36,4,4,center,False,Manual visual scan of quadrants
+reviewer_02,item_20,apify_DCM1uAEoIWA.mp4,Condition_A,20,Task_B,6.9,4,4,3.00s,False,Estimated from overall timeline
+reviewer_02,item_20,apify_DCM1uAEoIWA.mp4,Condition_A,20,Task_C,5.18,4,4,competing_stimuli,False,Harder to judge without spatial density data
+reviewer_02,item_20,apify_DCM1uAEoIWA.mp4,Condition_A,20,Task_D,8.19,4,4,composition_audit_completed,True,Only high-level temporal score provided; spatial composition remains uncertain.
+reviewer_03,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_A,4.3,5,4,center,False,Immediate focal guidance
+reviewer_03,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_B,6.62,4,4,3.00s,False,Saliency peak pinpoints high visual density moment
+reviewer_03,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_C,5.49,5,4,competing_stimuli,False,Spatial dispersion metrics clearly indicate focal concentration
+reviewer_03,item_20,apify_DCM1uAEoIWA.mp4,Condition_B,20,Task_D,9.27,4,5,composition_audit_completed,False,Spatial map assists in identifying subtitle competition with facial focus.

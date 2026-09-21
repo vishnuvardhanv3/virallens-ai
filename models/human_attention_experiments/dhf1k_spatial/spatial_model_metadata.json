@@ -1,0 +1,23 @@
+{
+  "model_name": "TinySalNet Spatial Saliency Prototype",
+  "framework": "PyTorch 2.13.0+cpu",
+  "architecture_type": "2D Convolutional Encoder-Decoder",
+  "trainable_parameters": 96521,
+  "normalization": "Spatial Softplus followed by spatial sum-to-1 division",
+  "input_format": "RGB [0, 1] tensor of shape (B, 3, 90, 160)",
+  "output_format": "Normalized spatial probability density map of shape (B, 1, 90, 160)",
+  "target_supervision": "DHF1K saliency-density supervision",
+  "training_epochs": 5,
+  "final_train_loss_kl": 1.8329821729660034,
+  "final_val_loss_kl": 2.0326699447631835,
+  "resource_profile": {
+    "device": "cpu",
+    "training_time_seconds": 370.5415532588959,
+    "validation_time_seconds": 9.618268489837646,
+    "batch_size": 32,
+    "input_dimensions": [
+      160,
+      90
+    ]
+  }
+}

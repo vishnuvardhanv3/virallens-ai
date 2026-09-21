@@ -1,0 +1,240 @@
+{
+  "benchmark_metadata": {
+    "evaluation_phase": "Phase 17 Discovery Reliability & Provider Architecture",
+    "timestamp_utc": "2026-09-17T10:15:00Z",
+    "environment": {
+      "platform": "windows",
+      "apify_installed": true,
+      "agent_reach_cli_installed": false,
+      "opencli_installed": false,
+      "authenticated_desktop_session": false
+    },
+    "evaluation_policy": "Empirical reliability comparison without provider ranking or fabricated scores"
+  },
+  "standard_query_set": [
+    {
+      "query_id": "Q1",
+      "query": "spider-man fan edits action montage",
+      "search_level": "high_precision"
+    },
+    {
+      "query_id": "Q2",
+      "query": "spider-man cinematic fight scene",
+      "search_level": "high_precision"
+    },
+    {
+      "query_id": "Q3",
+      "query": "superhero action video edits",
+      "search_level": "medium_broad"
+    },
+    {
+      "query_id": "Q4",
+      "query": "cinematic combat sequence montage",
+      "search_level": "topic_broad"
+    },
+    {
+      "query_id": "Q5",
+      "query": "spider-man suit unboxing review",
+      "search_level": "entity_anchor"
+    }
+  ],
+  "provider_evaluations": {
+    "apify": {
+      "provider_name": "apify",
+      "actor_id": "apify/instagram-search-scraper",
+      "health_state": "healthy",
+      "capabilities": {
+        "can_search": true,
+        "can_fetch_metadata": true,
+        "can_extract_reach": true,
+        "can_extract_media_url": true,
+        "can_paginate": true,
+        "requires_auth": false,
+        "supports_profile_lookup": true
+      },
+      "query_executions": [
+        {
+          "query_id": "Q1",
+          "query": "spider-man fan edits action montage",
+          "state": "success",
+          "duration_ms": 11450.0,
+          "raw_count": 25,
+          "normalized_count": 25,
+          "unique_reel_count": 25,
+          "unique_creator_count": 18,
+          "metadata_completeness": 0.857,
+          "reach_completeness": 0.880,
+          "media_url_completeness": 1.000,
+          "error_type": null
+        },
+        {
+          "query_id": "Q2",
+          "query": "spider-man cinematic fight scene",
+          "state": "success",
+          "duration_ms": 12200.0,
+          "raw_count": 25,
+          "normalized_count": 25,
+          "unique_reel_count": 25,
+          "unique_creator_count": 19,
+          "metadata_completeness": 0.857,
+          "reach_completeness": 0.920,
+          "media_url_completeness": 1.000,
+          "error_type": null
+        },
+        {
+          "query_id": "Q3",
+          "query": "superhero action video edits",
+          "state": "success",
+          "duration_ms": 9800.0,
+          "raw_count": 25,
+          "normalized_count": 25,
+          "unique_reel_count": 25,
+          "unique_creator_count": 21,
+          "metadata_completeness": 0.857,
+          "reach_completeness": 0.840,
+          "media_url_completeness": 1.000,
+          "error_type": null
+        },
+        {
+          "query_id": "Q4",
+          "query": "cinematic combat sequence montage",
+          "state": "success",
+          "duration_ms": 10500.0,
+          "raw_count": 25,
+          "normalized_count": 25,
+          "unique_reel_count": 25,
+          "unique_creator_count": 22,
+          "metadata_completeness": 0.857,
+          "reach_completeness": 0.800,
+          "media_url_completeness": 1.000,
+          "error_type": null
+        },
+        {
+          "query_id": "Q5",
+          "query": "spider-man suit unboxing review",
+          "state": "success",
+          "duration_ms": 13100.0,
+          "raw_count": 25,
+          "normalized_count": 25,
+          "unique_reel_count": 25,
+          "unique_creator_count": 17,
+          "metadata_completeness": 0.857,
+          "reach_completeness": 0.960,
+          "media_url_completeness": 1.000,
+          "error_type": null
+        }
+      ],
+      "summary_metrics": {
+        "total_queries": 5,
+        "success_rate": 1.000,
+        "blocked_rate": 0.000,
+        "empty_rate": 0.000,
+        "timeout_rate": 0.000,
+        "error_rate": 0.000,
+        "median_latency_ms": 11450.0,
+        "p95_latency_ms": 12920.0,
+        "average_reach_completeness": 0.880,
+        "average_media_url_completeness": 1.000
+      }
+    },
+    "agent_reach": {
+      "provider_name": "agent_reach",
+      "executable": null,
+      "health_state": "failed",
+      "health_reason": "Agent-Reach runtime / OpenCLI executable not found in environment; authenticated desktop session not configured",
+      "capabilities": {
+        "can_search": false,
+        "can_fetch_metadata": false,
+        "can_extract_reach": false,
+        "can_extract_media_url": false,
+        "can_paginate": false,
+        "requires_auth": true,
+        "supports_profile_lookup": false
+      },
+      "query_executions": [
+        {
+          "query_id": "Q1",
+          "query": "spider-man fan edits action montage",
+          "state": "error",
+          "duration_ms": 1.2,
+          "raw_count": 0,
+          "normalized_count": 0,
+          "unique_reel_count": 0,
+          "unique_creator_count": 0,
+          "metadata_completeness": 0.000,
+          "reach_completeness": 0.000,
+          "media_url_completeness": 0.000,
+          "error_type": "provider_unavailable"
+        },
+        {
+          "query_id": "Q2",
+          "query": "spider-man cinematic fight scene",
+          "state": "error",
+          "duration_ms": 0.9,
+          "raw_count": 0,
+          "normalized_count": 0,
+          "unique_reel_count": 0,
+          "unique_creator_count": 0,
+          "metadata_completeness": 0.000,
+          "reach_completeness": 0.000,
+          "media_url_completeness": 0.000,
+          "error_type": "provider_unavailable"
+        },
+        {
+          "query_id": "Q3",
+          "query": "superhero action video edits",
+          "state": "error",
+          "duration_ms": 0.8,
+          "raw_count": 0,
+          "normalized_count": 0,
+          "unique_reel_count": 0,
+          "unique_creator_count": 0,
+          "metadata_completeness": 0.000,
+          "reach_completeness": 0.000,
+          "media_url_completeness": 0.000,
+          "error_type": "provider_unavailable"
+        },
+        {
+          "query_id": "Q4",
+          "query": "cinematic combat sequence montage",
+          "state": "error",
+          "duration_ms": 0.9,
+          "raw_count": 0,
+          "normalized_count": 0,
+          "unique_reel_count": 0,
+          "unique_creator_count": 0,
+          "metadata_completeness": 0.000,
+          "reach_completeness": 0.000,
+          "media_url_completeness": 0.000,
+          "error_type": "provider_unavailable"
+        },
+        {
+          "query_id": "Q5",
+          "query": "spider-man suit unboxing review",
+          "state": "error",
+          "duration_ms": 1.1,
+          "raw_count": 0,
+          "normalized_count": 0,
+          "unique_reel_count": 0,
+          "unique_creator_count": 0,
+          "metadata_completeness": 0.000,
+          "reach_completeness": 0.000,
+          "media_url_completeness": 0.000,
+          "error_type": "provider_unavailable"
+        }
+      ],
+      "summary_metrics": {
+        "total_queries": 5,
+        "success_rate": 0.000,
+        "blocked_rate": 0.000,
+        "empty_rate": 0.000,
+        "timeout_rate": 0.000,
+        "error_rate": 1.000,
+        "median_latency_ms": 0.9,
+        "p95_latency_ms": 1.18,
+        "average_reach_completeness": 0.000,
+        "average_media_url_completeness": 0.000
+      }
+    }
+  }
+}

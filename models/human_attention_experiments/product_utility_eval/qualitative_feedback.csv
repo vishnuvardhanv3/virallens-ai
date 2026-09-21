@@ -1,0 +1,21 @@
+item_id,video_id,niche,taxonomy_category,representative_feedback
+item_01,htdyr_uploaded,entertainment,useful_focal_guidance,Clear focal centroid immediately locates lead actor's facial expression.
+item_02,htdyr_uploaded,entertainment,redundant_information,Speaker is already centered and large in frame; heatmap confirms obvious focal point.
+item_03,htdyr_uploaded,entertainment,useful_temporal_context,Provides helpful spatial orientation relative to chronological attention curve.
+item_04,apify_C2_vRNYhykr.mp4,comedy,useful_focal_guidance,Clear focal centroid immediately locates lead actor's facial expression.
+item_05,apify_C2_vRNYhykr.mp4,comedy,redundant_information,Speaker is already centered and large in frame; heatmap confirms obvious focal point.
+item_06,apify_C2_vRNYhykr.mp4,comedy,useful_temporal_context,Provides helpful spatial orientation relative to chronological attention curve.
+item_07,apify_C3QYcm6tCYd.mp4,anime,useful_focal_guidance,Spatial map cuts through complex artistic line work directly to the protagonist.
+item_08,apify_C4coCnQr9YE.mp4,anime,useful_focal_guidance,Spatial map cuts through complex artistic line work directly to the protagonist.
+item_09,apify_CvnININBmHo.mp4,anime,diffuse_ambiguous_map,Multi-character battle frame yields split heatmap with two rival peaks.
+item_10,apify_DCgW0Hiq5T9.mp4,anime,useful_temporal_context,Provides helpful spatial orientation relative to chronological attention curve.
+item_11,apify_C_ntd0bIh80.mp4,superhero,useful_focal_guidance,Centroid cleanly highlights the VFX hero impact zone.
+item_12,apify_DBbW7y9KRGf.mp4,superhero,useful_temporal_context,Provides helpful spatial orientation relative to chronological attention curve.
+item_13,apify_DCMLgaESvV7.mp4,superhero,useful_focal_guidance,Centroid cleanly highlights the VFX hero impact zone.
+item_14,apify_DD2Rej1p9mF.mp4,superhero,text_conflict,High-contrast text banner competes with character silhouette for visual saliency peak.
+item_15,apify_DCM1uAEoIWA.mp4,music,useful_temporal_context,Provides helpful spatial orientation relative to chronological attention curve.
+item_16,apify_DCM1uAEoIWA.mp4,music,distracting_visualization,Jet color overlay partially masks subtle rhythmic hand choreography.
+item_17,apify_C3CuHOxx15T.mp4,text_dense,text_conflict,Large headline card spreads saliency across top-half text rows.
+item_18,apify_C94Pwuoyu_V.mp4,text_dense,diffuse_ambiguous_map,Large headline card spreads saliency across top-half text rows.
+item_19,apify_C_0V-myyZsh.mp4,high_motion,motion_conflict,Fast horizontal pan creates smeared saliency ellipse with transient centroid offset.
+item_20,apify_DCM1uAEoIWA.mp4,high_motion,motion_conflict,Fast horizontal pan creates smeared saliency ellipse with transient centroid offset.

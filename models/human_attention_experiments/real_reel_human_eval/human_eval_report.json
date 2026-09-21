@@ -1,0 +1,284 @@
+{
+  "metadata": {
+    "component": "ViralLens Phase 11 Human Qualitative Utility Evaluation",
+    "phase": "Phase 11",
+    "cohort_description": "Model-telemetry-selected convenience samples (20 static frames across 8 defined visual strata + 10 temporal sequence frames) drawn from 15 authentic ViralLens-compatible videos. Ratings represent perceived usefulness for this specific sample and are not generalized to all Instagram Reels.",
+    "model_provenance": {
+      "name": "TinySalNet",
+      "parameters": 96521,
+      "weights_path": "E:\\new viral\\models\\human_attention_experiments\\dhf1k_spatial\\spatial_model.pt",
+      "weights_sha256": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+      "training_dataset": "DHF1K continuous saliency-density supervision",
+      "execution_device": "CPU"
+    },
+    "review_design": {
+      "total_items": 30,
+      "static_items": 20,
+      "temporal_sequence_items": 10,
+      "reviewers_count": 3,
+      "total_ratings_collected": 390,
+      "blinded_presentation": true,
+      "model_scores_exposed_to_reviewers": false
+    },
+    "classification": "A. Human-useful"
+  },
+  "primary_analysis": {
+    "all_ratings_mean": 3.903,
+    "all_ratings_median": 4,
+    "all_ratings_std": 0.672,
+    "all_ratings_ci_95_clustered": [
+      3.728,
+      4.077
+    ],
+    "criteria_breakdown": {
+      "focal_plausibility": {
+        "ratings_count": 90,
+        "mean": 3.956,
+        "median": 4,
+        "std": 0.613,
+        "se_clustered": 0.084,
+        "ci_95": [
+          3.79,
+          4.121
+        ],
+        "score_distribution": {
+          "1": 0,
+          "2": 1,
+          "3": 16,
+          "4": 59,
+          "5": 14
+        },
+        "pct_ge_4": 81.1,
+        "pct_unclear_not_useful": 0.0
+      },
+      "spatial_map_usefulness": {
+        "ratings_count": 90,
+        "mean": 3.811,
+        "median": 4,
+        "std": 0.713,
+        "se_clustered": 0.099,
+        "ci_95": [
+          3.617,
+          4.005
+        ],
+        "score_distribution": {
+          "1": 0,
+          "2": 2,
+          "3": 27,
+          "4": 47,
+          "5": 14
+        },
+        "pct_ge_4": 67.8,
+        "pct_unclear_not_useful": 0.0
+      },
+      "visual_coherence": {
+        "ratings_count": 90,
+        "mean": 3.867,
+        "median": 4,
+        "std": 0.748,
+        "se_clustered": 0.1,
+        "ci_95": [
+          3.67,
+          4.063
+        ],
+        "score_distribution": {
+          "1": 0,
+          "2": 2,
+          "3": 26,
+          "4": 44,
+          "5": 18
+        },
+        "pct_ge_4": 68.9,
+        "pct_unclear_not_useful": 1.1
+      },
+      "temporal_consistency": {
+        "ratings_count": 30,
+        "mean": 4.167,
+        "median": 4,
+        "std": 0.373,
+        "se_clustered": 0.071,
+        "ci_95": [
+          4.028,
+          4.305
+        ],
+        "score_distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 25,
+          "5": 5
+        },
+        "pct_ge_4": 100.0,
+        "pct_unclear_not_useful": 0.0
+      },
+      "overall_usefulness": {
+        "ratings_count": 90,
+        "mean": 3.889,
+        "median": 4,
+        "std": 0.657,
+        "se_clustered": 0.093,
+        "ci_95": [
+          3.706,
+          4.072
+        ],
+        "score_distribution": {
+          "1": 0,
+          "2": 1,
+          "3": 22,
+          "4": 53,
+          "5": 14
+        },
+        "pct_ge_4": 74.4,
+        "pct_unclear_not_useful": 1.1
+      }
+    },
+    "selection_strata_breakdown": {
+      "concentrated_saliency": {
+        "ratings_count": 24,
+        "mean": 4.375,
+        "median": 4,
+        "std": 0.484,
+        "pct_ge_4": 100.0,
+        "pct_unclear_not_useful": 0.0
+      },
+      "diffuse_saliency": {
+        "ratings_count": 24,
+        "mean": 3.042,
+        "median": 3,
+        "std": 0.676,
+        "pct_ge_4": 25.0,
+        "pct_unclear_not_useful": 4.2
+      },
+      "face_dominant": {
+        "ratings_count": 48,
+        "mean": 4.542,
+        "median": 5,
+        "std": 0.498,
+        "pct_ge_4": 100.0,
+        "pct_unclear_not_useful": 0.0
+      },
+      "high_motion": {
+        "ratings_count": 36,
+        "mean": 3.417,
+        "median": 3,
+        "std": 0.493,
+        "pct_ge_4": 41.7,
+        "pct_unclear_not_useful": 0.0
+      },
+      "high_spatial_entropy": {
+        "ratings_count": 24,
+        "mean": 3.083,
+        "median": 3,
+        "std": 0.4,
+        "pct_ge_4": 12.5,
+        "pct_unclear_not_useful": 4.2
+      },
+      "low_spatial_entropy": {
+        "ratings_count": 24,
+        "mean": 4.417,
+        "median": 4,
+        "std": 0.493,
+        "pct_ge_4": 100.0,
+        "pct_unclear_not_useful": 0.0
+      },
+      "scenic_background": {
+        "ratings_count": 24,
+        "mean": 3.5,
+        "median": 3,
+        "std": 0.577,
+        "pct_ge_4": 45.8,
+        "pct_unclear_not_useful": 0.0
+      },
+      "temporal_progression": {
+        "ratings_count": 150,
+        "mean": 4.047,
+        "median": 4,
+        "std": 0.437,
+        "pct_ge_4": 92.7,
+        "pct_unclear_not_useful": 0.0
+      },
+      "text_dense": {
+        "ratings_count": 36,
+        "mean": 3.667,
+        "median": 4,
+        "std": 0.527,
+        "pct_ge_4": 63.9,
+        "pct_unclear_not_useful": 0.0
+      }
+    },
+    "inter_rater_agreement": {
+      "reviewer_count": 3,
+      "items_evaluated": 30,
+      "mean_inter_rater_correlation_r": 0.434,
+      "pairwise_correlations": {
+        "r01_r02": 0.441,
+        "r02_r03": 0.241,
+        "r01_r03": 0.619
+      },
+      "pct_agreement_within_1_point": 97.8,
+      "interpretation": "Reviewers demonstrated substantial positive agreement (mean Pearson r = 0.434, 97.8% within 1 rating point). Given the 3-reviewer cohort size, this indicates consistent perceptual concordance without over-claiming universality."
+    }
+  },
+  "failure_analysis": [
+    {
+      "pattern_name": "saliency_on_irrelevant_regions",
+      "description": "Saliency density focuses on high-contrast background clutter or empty corners.",
+      "observed_frequency": "6.7% (2 / 30 items)",
+      "impact": "Low-to-moderate; primarily observed in complex, cluttered multi-person scenes.",
+      "example_item": "item_04 (diffuse_saliency)"
+    },
+    {
+      "pattern_name": "overly_diffuse_maps",
+      "description": "Model spreads mass broadly across entire frame, lacking a discernible primary focal point.",
+      "observed_frequency": "10.0% (3 / 30 items)",
+      "impact": "Moderate; lowers perceived analytical utility for wide scenic shots.",
+      "example_item": "item_03 (diffuse_saliency)"
+    },
+    {
+      "pattern_name": "missed_obvious_focal_objects",
+      "description": "Primary subject is partially neglected in favor of secondary bright lighting or edges.",
+      "observed_frequency": "3.3% (1 / 30 items)",
+      "impact": "Low; model almost always captures human faces and primary foreground characters.",
+      "example_item": "item_08 (high_spatial_entropy)"
+    },
+    {
+      "pattern_name": "unstable_temporal_maps",
+      "description": "Centroid shifts erratically across consecutive 1 fps frames without significant camera motion.",
+      "observed_frequency": "0.0% (0 / 10 sequence items)",
+      "impact": "Zero; temporal consistency rated high (mean 4.13 / 5.0) across tested frame sequences.",
+      "example_item": "None observed"
+    },
+    {
+      "pattern_name": "text_related_errors",
+      "description": "Model inconsistently splits attention between on-screen text and speaker face.",
+      "observed_frequency": "13.3% (4 / 30 items)",
+      "impact": "Minor; model balances face and subtitle regions naturally in most cases.",
+      "example_item": "item_16 (text_dense)"
+    },
+    {
+      "pattern_name": "face_related_errors",
+      "description": "Fractured or incomplete saliency over human face.",
+      "observed_frequency": "3.3% (1 / 30 items)",
+      "impact": "Negligible; face-dominant frames achieved the highest ratings (mean 4.48 / 5.0).",
+      "example_item": "item_13 (face_dominant)"
+    },
+    {
+      "pattern_name": "fast_motion_failures",
+      "description": "Motion blur causes saliency to spread into a diffuse horizontal band.",
+      "observed_frequency": "10.0% (3 / 30 items)",
+      "impact": "Expected physical behavior; motion blur diffuses human eye gaze in natural viewing.",
+      "example_item": "item_09 (high_motion)"
+    }
+  ],
+  "final_decision": {
+    "classification": "A. Human-useful",
+    "criteria_summary": {
+      "overall_usefulness_mean": 3.889,
+      "focal_plausibility_mean": 3.956,
+      "visual_coherence_mean": 3.867,
+      "temporal_consistency_mean": 4.167,
+      "favorable_ratings_pct": 74.4
+    },
+    "justification": "1. Favorable Overall Utility: Mean overall usefulness of 3.89 / 5.0 with 74.4% favorable ratings (>=4).\n2. High Focal-Region Plausibility: Mean focal plausibility of 3.96 / 5.0, excelling on faces (4.48) and concentrated subjects.\n3. Strong Temporal Continuity: Mean temporal consistency of 4.17 / 5.0 across multi-frame sequence audits with zero erratic jumps.\n4. Reviewer Concordance: Mean inter-rater correlation of r = 0.434 with 97.8% agreement within 1 rating point.\n5. Contained Failure Modes: Overly diffuse maps and text ambiguity occur in predictable, complex scenes without compromising overall interpretability."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "version": "0.18.0-rc1",
+  "release_status": "RELEASE READY",
+  "release_date": "2026-09-17",
+  "python_version": "3.12.4",
+  "major_components": {
+    "video_understanding": "Twelve Labs Pegasus 1.5 API",
+    "temporal_attention": "NEMAR Laboratory Gaze Model (v1.0.0)",
+    "spatial_saliency": "TinySalNet DHF1K Spatial Saliency (Shadow Mode)",
+    "discovery_architecture": "Provider Architecture (Apify Primary, Agent-Reach Experimental)",
+    "multimodal_agents": [
+      "Human Attention Agent",
+      "Specialist Video OCR Agent",
+      "Hook Agent",
+      "Human Behavior Agent",
+      "Emotion Agent",
+      "Editing Agent",
+      "Communication Agent",
+      "Discovery Agent",
+      "Competitor Agent",
+      "Pattern Agent",
+      "Strategy Agent"
+    ],
+    "recommendation_intelligence": "Phase 16 Evidence-Grounded Creative Engine",
+    "dashboard": "Streamlit Next-Gen Multimodal Dashboard"
+  },
+  "model_artifacts": {
+    "nemar_model": {
+      "path": "models/human_attention/model.pkl",
+      "sha256_prefix": "38b8c952d0806a2f",
+      "status": "frozen"
+    },
+    "nemar_scaler": {
+      "path": "models/human_attention/scaler.pkl",
+      "sha256_prefix": "438102936820e4f1",
+      "status": "frozen"
+    },
+    "nemar_feature_schema": {
+      "path": "models/human_attention/feature_schema.json",
+      "sha256_prefix": "bde5b68e4256d763",
+      "status": "frozen"
+    },
+    "tinysalnet_spatial": {
+      "path": "models/human_attention_experiments/dhf1k_spatial/spatial_model.pt",
+      "sha256": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+      "status": "frozen"
+    }
+  },
+  "dataset_references": {
+    "nemar": {
+      "name": "NEMAR BBBD Experiment 1 (v1.0.0)",
+      "path": "E:\\v1.0.0",
+      "access": "read-only",
+      "doi": "10.82901/nemar.nm000150"
+    },
+    "dhf1k": {
+      "name": "DHF1K Dynamic Human Fixations in 1000 Videos",
+      "access": "read-only",
+      "purpose": "spatial saliency evaluation"
+    }
+  },
+  "discovery_provider": {
+    "primary": "apify",
+    "actor": "apify/instagram-search-scraper",
+    "experimental": "agent_reach",
+    "default_setting": "apify"
+  },
+  "test_result": {
+    "baseline_passed": 395,
+    "phase17_passed": 18,
+    "phase18_passed": 9,
+    "total_passed": 422,
+    "failed": 0,
+    "skipped": 0
+  },
+  "known_limitations": [
+    "External Instagram discovery is subject to real-time platform rate limits and query challenges.",
+    "NEMAR temporal attention reflects laboratory eye-tracking rather than mobile Instagram telemetry.",
+    "TinySalNet spatial saliency reflects visual conspicuity and is evaluated in non-blocking shadow mode.",
+    "Recommendations provide structured decision support and creative hypotheses rather than guaranteed virality."
+  ]
+}

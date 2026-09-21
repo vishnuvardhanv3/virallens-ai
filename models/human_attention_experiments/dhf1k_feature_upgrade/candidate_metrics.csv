@@ -1,0 +1,9 @@
+experiment_stage,model_name,feature_set,feature_count,fit_time_sec,train_mae,train_rmse,train_r2,val_mae,val_rmse,val_r2,pearson_r,spearman_rho,delta_mae_vs_base,relative_mae_change_pct,delta_r2_vs_base
+exp_a_baseline,ExtraTreesRegressor,set_a_baseline,14,0.43,0.0369,0.0464,0.2937,0.0454,0.0564,0.0247,0.1573,0.1645,0.0,0.0,0.0
+exp_b_temporal_dynamics,ExtraTreesRegressor,set_b_temporal_dynamics,27,0.68,0.0365,0.0459,0.3092,0.0454,0.0565,0.0225,0.1504,0.1512,0.0,0.0,-0.0022
+exp_c1_causal_context,ExtraTreesRegressor,set_c1_causal_context,28,0.59,0.0354,0.0447,0.3456,0.0454,0.0564,0.0241,0.1572,0.144,0.0,0.0,-0.0006
+exp_c2_bidirectional_context,ExtraTreesRegressor,set_c2_bidirectional_context,42,1.02,0.0346,0.0438,0.3715,0.0454,0.0564,0.0256,0.1616,0.157,0.0,0.0,0.0009
+exp_d_ExtraTreesRegressor,ExtraTreesRegressor,set_c2_bidirectional_context,42,0.99,0.0346,0.0438,0.3715,0.0454,0.0564,0.0256,0.1616,0.157,0.0,0.0,0.0009
+exp_d_RandomForestRegressor,RandomForestRegressor,set_c2_bidirectional_context,42,27.61,0.0331,0.042,0.4228,0.0454,0.0564,0.0255,0.1631,0.1632,0.0,0.0,0.0008
+exp_d_HistGradientBoostingRegressor,HistGradientBoostingRegressor,set_c2_bidirectional_context,42,7.78,0.0375,0.0471,0.2718,0.0457,0.0567,0.0139,0.1376,0.1321,0.0003,0.66,-0.0108
+exp_d_GradientBoostingRegressor,GradientBoostingRegressor,set_c2_bidirectional_context,42,79.23,0.0384,0.0482,0.2373,0.0458,0.0569,0.0087,0.1215,0.1293,0.0004,0.88,-0.016

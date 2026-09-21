@@ -1,0 +1,112 @@
+{
+  "exploratory_in_sample": {
+    "note": "EXPLORATORY ONLY: Fitted and evaluated in-sample on the same DHF1K validation set. Not an unbiased generalization estimate.",
+    "original_model": {
+      "mae": 0.0454,
+      "rmse": 0.0564,
+      "r2": 0.0246,
+      "pearson_r": 0.1573,
+      "spearman_rho": 0.1644
+    },
+    "exploratory_in_sample_affine": {
+      "parameters": {
+        "slope_a": 0.9457,
+        "intercept_b": 0.046
+      },
+      "mae": 0.0454,
+      "rmse": 0.0564,
+      "r2": 0.0247,
+      "pearson_r": 0.1573,
+      "spearman_rho": 0.1644,
+      "mae_change": -0.0
+    },
+    "exploratory_in_sample_isotonic": {
+      "mae": 0.045,
+      "rmse": 0.056,
+      "r2": 0.0385,
+      "pearson_r": 0.1962,
+      "spearman_rho": 0.1788,
+      "mae_change": -0.0004
+    }
+  },
+  "cross_validated_evaluation": {
+    "cross_fitting_method": "5-Fold Deterministic Grouped Cross-Fitting by Video ID",
+    "folds_summary": [
+      {
+        "fold": 1,
+        "train_videos_count": 80,
+        "test_videos_count": 20,
+        "affine_slope": 1.0014,
+        "affine_intercept": -0.0029,
+        "test_fold_samples": 825,
+        "test_orig_mae": 0.0453,
+        "test_affine_mae": 0.0457,
+        "test_isotonic_mae": 0.0455
+      },
+      {
+        "fold": 2,
+        "train_videos_count": 80,
+        "test_videos_count": 20,
+        "affine_slope": 0.8749,
+        "affine_intercept": 0.1069,
+        "test_fold_samples": 787,
+        "test_orig_mae": 0.0461,
+        "test_affine_mae": 0.0463,
+        "test_isotonic_mae": 0.0467
+      },
+      {
+        "fold": 3,
+        "train_videos_count": 80,
+        "test_videos_count": 20,
+        "affine_slope": 0.9264,
+        "affine_intercept": 0.0629,
+        "test_fold_samples": 798,
+        "test_orig_mae": 0.0445,
+        "test_affine_mae": 0.0445,
+        "test_isotonic_mae": 0.0444
+      },
+      {
+        "fold": 4,
+        "train_videos_count": 80,
+        "test_videos_count": 20,
+        "affine_slope": 1.0251,
+        "affine_intercept": -0.0183,
+        "test_fold_samples": 748,
+        "test_orig_mae": 0.0474,
+        "test_affine_mae": 0.0476,
+        "test_isotonic_mae": 0.0485
+      },
+      {
+        "fold": 5,
+        "train_videos_count": 80,
+        "test_videos_count": 20,
+        "affine_slope": 0.8794,
+        "affine_intercept": 0.0992,
+        "test_fold_samples": 812,
+        "test_orig_mae": 0.0439,
+        "test_affine_mae": 0.0445,
+        "test_isotonic_mae": 0.0444
+      }
+    ],
+    "cross_fitted_affine": {
+      "mae": 0.0457,
+      "rmse": 0.0567,
+      "r2": 0.0131,
+      "pearson_r": 0.1204,
+      "pearson_p": 2.7627134352442987e-14,
+      "spearman_rho": 0.117,
+      "spearman_p": 1.4474656866170233e-13,
+      "delta_mae_vs_original": 0.0003
+    },
+    "cross_fitted_isotonic": {
+      "mae": 0.0459,
+      "rmse": 0.0569,
+      "r2": 0.0063,
+      "pearson_r": 0.1053,
+      "pearson_p": 2.8994048977356376e-11,
+      "spearman_rho": 0.1197,
+      "spearman_p": 3.74921589257107e-14,
+      "delta_mae_vs_original": 0.0005
+    }
+  }
+}

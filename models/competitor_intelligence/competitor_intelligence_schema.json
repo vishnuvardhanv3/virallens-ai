@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ViralLensCompetitorIntelligenceSchema",
+  "version": "1.0.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "verified_competitor_count",
+    "unique_creators",
+    "primary_subgroup",
+    "target_normalized",
+    "competitors_normalized",
+    "subgroup_counts",
+    "numeric_comparisons",
+    "recurring_patterns",
+    "all_subgroup_patterns",
+    "gap_analysis",
+    "reach_aware_observations",
+    "creative_implications",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["1.0.0"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["SUCCESS", "PARTIAL", "FAILED", "SKIPPED_NO_COMPETITORS"]
+    },
+    "verified_competitor_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unique_creators": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "primary_subgroup": {
+      "type": "string",
+      "enum": ["same_entity_and_edit_type", "same_edit_type", "all_verified"]
+    },
+    "target_normalized": {
+      "type": "object",
+      "required": ["reel_id", "semantic", "video", "temporal_attention", "spatial_saliency", "attention_intelligence"],
+      "properties": {
+        "reel_id": {"type": "string"},
+        "semantic": {"type": "object"},
+        "video": {"type": "object"},
+        "temporal_attention": {"type": "object"},
+        "spatial_saliency": {"type": "object"},
+        "attention_intelligence": {"type": "object"}
+      }
+    },
+    "competitors_normalized": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["identity", "reach", "semantic", "video", "visual", "audio", "attention", "ocr", "relevance", "provenance"],
+        "properties": {
+          "identity": {
+            "type": "object",
+            "required": ["canonical_reel_id", "canonical_url", "creator"]
+          },
+          "reach": {
+            "type": "object",
+            "required": ["views", "reach_valid"]
+          },
+          "semantic": {
+            "type": "object",
+            "required": ["entity", "niche", "edit_type"]
+          },
+          "video": {"type": "object"},
+          "visual": {"type": "object"},
+          "audio": {"type": "object"},
+          "attention": {"type": "object"},
+          "ocr": {"type": "object"},
+          "relevance": {"type": "object"},
+          "provenance": {"type": "object"}
+        }
+      }
+    },
+    "subgroup_counts": {
+      "type": "object",
+      "required": ["same_entity_and_edit_type", "same_edit_type", "all_verified", "highest_reach_same_edit_type"],
+      "properties": {
+        "same_entity_and_edit_type": {"type": "integer"},
+        "same_edit_type": {"type": "integer"},
+        "all_verified": {"type": "integer"},
+        "highest_reach_same_edit_type": {"type": "integer"}
+      }
+    },
+    "numeric_comparisons": {
+      "type": "object",
+      "properties": {
+        "motion_magnitude": {"type": "object"},
+        "scene_cut_rate": {"type": "object"},
+        "spatial_dispersion": {"type": "object"},
+        "peak_attention_score": {"type": "object"}
+      }
+    },
+    "recurring_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pattern_id",
+          "pattern_name",
+          "subgroup",
+          "numerator",
+          "denominator",
+          "prevalence",
+          "target_value",
+          "competitor_value",
+          "evidence",
+          "provenance",
+          "strength",
+          "limitation"
+        ],
+        "properties": {
+          "pattern_id": {"type": "string"},
+          "pattern_name": {"type": "string"},
+          "subgroup": {"type": "string"},
+          "numerator": {"type": "integer"},
+          "denominator": {"type": "integer"},
+          "prevalence": {"type": "number"},
+          "target_value": {"type": "string"},
+          "competitor_value": {"type": "string"},
+          "evidence": {"type": "array", "items": {"type": "string"}},
+          "provenance": {"type": "object"},
+          "strength": {
+            "type": "string",
+            "enum": ["strong_observed_pattern", "moderate_observed_pattern", "weak_observed_pattern", "insufficient_sample"]
+          },
+          "limitation": {"type": "string"}
+        }
+      }
+    },
+    "gap_analysis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pattern_id",
+          "pattern_name",
+          "subgroup",
+          "numerator",
+          "denominator",
+          "prevalence",
+          "target_value",
+          "competitor_aggregate",
+          "gap_status",
+          "interpretation",
+          "limitation"
+        ],
+        "properties": {
+          "gap_status": {"type": "string", "enum": ["aligned", "divergent"]},
+          "interpretation": {"type": "string"}
+        }
+      }
+    },
+    "reach_aware_observations": {
+      "type": "object",
+      "required": ["status", "valid_reach_count", "observations", "limitations"],
+      "properties": {
+        "status": {"type": "string"},
+        "valid_reach_count": {"type": "integer"},
+        "cohort_median_views": {"type": ["number", "null"]},
+        "observations": {"type": "array", "items": {"type": "string"}},
+        "limitations": {"type": "string"}
+      }
+    },
+    "creative_implications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "pattern_name",
+          "observation",
+          "evidence",
+          "target_competitor_comparison",
+          "recommendation",
+          "limitation"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["target_reel_id", "competitor_ids", "subgroups_evaluated", "zero_network_calls", "zero_duplicate_inference"]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "phase": "Phase 12",
+  "component": "ViralLens Controlled Product-Utility Evaluation of TinySalNet",
+  "evaluation_type": "Within-subject crossover controlled experiment",
+  "random_seed": 42,
+  "frozen_models": {
+    "TinySalNet": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+    "production_nemar": {
+      "model.pkl": "38b8c952d0806a2fbed52624a497b3bdb1b69554bc81b247e64770e70c26fa89",
+      "scaler.pkl": "438102936820e4f1729dd643078cb3d545bc2fe369b89c95c05cd0e58ce81f58",
+      "feature_schema.json": "bde5b68e4256d7635733c7d33ca9d18db5118d39e81ce37aa5419c1bde46e411"
+    }
+  },
+  "cohort": {
+    "items_count": 20,
+    "niches": [
+      "anime",
+      "comedy",
+      "entertainment",
+      "high_motion",
+      "music",
+      "superhero",
+      "text_dense"
+    ],
+    "reviewers": [
+      "reviewer_01",
+      "reviewer_02",
+      "reviewer_03"
+    ],
+    "total_ratings": 240
+  },
+  "classification": "A. Meaningful decision-support benefit"
+}

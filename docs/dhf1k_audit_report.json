@@ -1,0 +1,458 @@
+{
+  "audit_metadata": {
+    "timestamp": "2026-09-10T12:58:33.786145",
+    "project_root": "E:\\new viral",
+    "dhf1k_root": "E:\\viral_attention_data\\DHF1K",
+    "status": "COMPLETED",
+    "action_taken": "READ_ONLY_AUDIT",
+    "training_occurred": false,
+    "production_model_modified": false,
+    "source_files_modified": false
+  },
+  "archive_provenance": {
+    "archives": [
+      {
+        "archive_name": "video.rar",
+        "location": "E:\\video.rar",
+        "size_bytes": 4032563381,
+        "size_gb": 3.75,
+        "status": "Intact, unmodified at original location"
+      },
+      {
+        "archive_name": "exportdata_train.rar",
+        "location": "E:\\exportdata_train.rar",
+        "size_bytes": 758878229,
+        "size_mb": 723.7,
+        "status": "Intact, unmodified at original location"
+      },
+      {
+        "archive_name": "annotation.rar",
+        "location": "E:\\annotation.rar",
+        "size_bytes": 3888600981,
+        "size_gb": 3.62,
+        "status": "Intact, unmodified at original location"
+      }
+    ]
+  },
+  "dataset_structure": {
+    "extracted_root": "E:\\viral_attention_data\\DHF1K",
+    "subdirectories": [
+      {
+        "path": "E:\\viral_attention_data\\DHF1K\\video",
+        "type": "video_store",
+        "file_count": 1000,
+        "file_extension": ".AVI",
+        "naming_pattern": "{index:03d}.AVI (001.AVI - 1000.AVI)",
+        "size_bytes": 4117756894,
+        "size_gb": 3.83
+      },
+      {
+        "path": "E:\\viral_attention_data\\DHF1K\\annotation",
+        "type": "ground_truth_annotations",
+        "sequence_folder_count": 700,
+        "sequence_folder_pattern": "{index:04d} (0001 - 0700)",
+        "total_files": 1219939,
+        "png_files": 813526,
+        "mat_files": 406413,
+        "size_bytes": 4184287481,
+        "size_gb": 3.9,
+        "subfolders_per_sequence": [
+          "fixation",
+          "fixation/maps",
+          "maps"
+        ]
+      },
+      {
+        "path": "E:\\viral_attention_data\\DHF1K\\exportdata_train",
+        "type": "raw_eye_tracking_data",
+        "participant_folder_count": 17,
+        "participant_ids": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17"
+        ],
+        "total_files": 11900,
+        "files_per_participant": 700,
+        "file_pattern": "P{participant:02d}_Trail{trial:03d}.txt",
+        "size_bytes": 3117276242,
+        "size_gb": 2.9
+      }
+    ],
+    "total_extracted_files": 1232839,
+    "total_extracted_size_bytes": 11419320617,
+    "total_extracted_size_gb": 10.64
+  },
+  "video_properties": {
+    "container": "AVI",
+    "video_codec": "FMP4 (MPEG-4 Part 2 / DivX)",
+    "resolution": {
+      "width": 640,
+      "height": 360
+    },
+    "aspect_ratio": "16:9",
+    "frame_rate_fps": 30.0,
+    "duration_range_sec": {
+      "min": 5.8,
+      "max": 42.1,
+      "mean": 17.2
+    },
+    "frame_count_range": {
+      "min": 174,
+      "max": 1263,
+      "mean": 516
+    },
+    "audio_stream_present": true,
+    "audio_characteristics": "Present in AVI container across sequences, loadable by FFmpeg/moviepy"
+  },
+  "annotation_semantics": {
+    "fixation_png": {
+      "path_pattern": "annotation/{seq:04d}/fixation/{frame:04d}.png",
+      "format": "Grayscale 8-bit PNG",
+      "dimensions": [
+        360,
+        640
+      ],
+      "values": [
+        0,
+        255
+      ],
+      "meaning": "Binary spatial human fixation points across all 17 observers (255 = fixation coordinate, 0 = background)"
+    },
+    "saliency_map_png": {
+      "path_pattern": "annotation/{seq:04d}/maps/{frame:04d}.png",
+      "format": "Grayscale 8-bit PNG",
+      "dimensions": [
+        360,
+        640
+      ],
+      "values": "Continuous [0, 255]",
+      "meaning": "Human visual saliency density map computed by applying Gaussian smoothing filter across the 17 observers' fixations"
+    },
+    "mat_structure": {
+      "path_pattern": "annotation/{seq:04d}/fixation/maps/{frame:04d}.mat",
+      "mat_version": "MATLAB 5.0 (v7)",
+      "variables": {
+        "I": {
+          "type": "ndarray",
+          "dtype": "uint8",
+          "shape": [
+            360,
+            640
+          ],
+          "values": [
+            0,
+            1
+          ],
+          "meaning": "Binary fixation matrix identical to (fixation.png > 0)"
+        }
+      }
+    },
+    "sequence_root_file": {
+      "path_pattern": "annotation/{seq:04d}/{last_frame:04d}.png",
+      "format": "RGB 24-bit PNG",
+      "meaning": "Extracted keyframe corresponding to final video frame"
+    }
+  },
+  "gaze_export_schema": {
+    "file_path_pattern": "exportdata_train/P{part:02d}/P{part:02d}_Trail{trial:03d}.txt",
+    "delimiter": "Tab (\\t)",
+    "sampling_rate_hz": 250.0,
+    "median_dt_microseconds": 3997.0,
+    "columns": [
+      {
+        "index": 0,
+        "name": "Time",
+        "type": "int64",
+        "description": "Timestamp in microseconds (e.g. 107977452442)"
+      },
+      {
+        "index": 1,
+        "name": "Type",
+        "type": "string",
+        "description": "Sample record marker ('SMP')"
+      },
+      {
+        "index": 2,
+        "name": "Trial",
+        "type": "int",
+        "description": "Trial index corresponding to video sequence (1 to 700)"
+      },
+      {
+        "index": 3,
+        "name": "L Dia X [px]",
+        "type": "float",
+        "description": "Left pupil diameter X in pixels"
+      },
+      {
+        "index": 4,
+        "name": "L Dia Y [px]",
+        "type": "float",
+        "description": "Left pupil diameter Y in pixels"
+      },
+      {
+        "index": 5,
+        "name": "L POR X [px]",
+        "type": "float",
+        "description": "Left point of regard (gaze X screen coordinate in pixels)"
+      },
+      {
+        "index": 6,
+        "name": "L POR Y [px]",
+        "type": "float",
+        "description": "Left point of regard (gaze Y screen coordinate in pixels)"
+      },
+      {
+        "index": 7,
+        "name": "L Event Info",
+        "type": "string",
+        "description": "Oculomotor event classification: 'Fixation', 'Saccade', 'Blink', '-'"
+      }
+    ]
+  },
+  "split_verification": {
+    "total_videos": 1000,
+    "annotated_videos": 700,
+    "test_videos_without_annotations": 300,
+    "official_dhf1k_splits": {
+      "training": {
+        "video_range": "001.AVI - 600.AVI",
+        "video_count": 600,
+        "annotation_present": true,
+        "gaze_present": true,
+        "split_name": "train"
+      },
+      "validation": {
+        "video_range": "601.AVI - 700.AVI",
+        "video_count": 100,
+        "annotation_present": true,
+        "gaze_present": true,
+        "split_name": "val"
+      },
+      "test": {
+        "video_range": "701.AVI - 1000.AVI",
+        "video_count": 300,
+        "annotation_present": false,
+        "gaze_present": false,
+        "split_name": "test (held-out on benchmark server)"
+      }
+    },
+    "evidence": [
+      "Folder E:\\viral_attention_data\\DHF1K\\annotation contains exactly directories 0001 through 0700.",
+      "Folder E:\\viral_attention_data\\DHF1K\\exportdata_train contains exactly files Trail001.txt through Trail700.txt for participants P01-P17.",
+      "Videos 701.AVI through 1000.AVI exist in E:\\viral_attention_data\\DHF1K\\video, but have zero corresponding directories in annotation/ or exportdata_train/.",
+      "Matches official Wang et al. (CVPR 2018 / TPAMI 2019) benchmark protocol where 701-1000 annotations are held private."
+    ]
+  },
+  "canonical_virallens_schema_mapping": {
+    "fields": [
+      {
+        "canonical_field": "dataset_source",
+        "dhf1k_source": "Constant 'DHF1K'",
+        "data_type": "string",
+        "example": "DHF1K"
+      },
+      {
+        "canonical_field": "video_id",
+        "dhf1k_source": "Video filename without ext prefixed by DHF1K_",
+        "data_type": "string",
+        "example": "DHF1K_001"
+      },
+      {
+        "canonical_field": "participant_id",
+        "dhf1k_source": "Folder name (e.g. 'P01') or 'aggregate_17_observers'",
+        "data_type": "string",
+        "example": "P01"
+      },
+      {
+        "canonical_field": "frame_index",
+        "dhf1k_source": "Frame number (1-based from filename or computed from timestamp)",
+        "data_type": "int",
+        "example": 1
+      },
+      {
+        "canonical_field": "timestamp",
+        "dhf1k_source": "Elapsed seconds from trial start ((Time - Time_0)/1e6) or (frame_idx - 1)/30.0",
+        "data_type": "float",
+        "example": 0.0333
+      },
+      {
+        "canonical_field": "gaze_x",
+        "dhf1k_source": "L POR X [px] normalized by screen width or raw pixel coordinate",
+        "data_type": "float | null",
+        "example": 948.05
+      },
+      {
+        "canonical_field": "gaze_y",
+        "dhf1k_source": "L POR Y [px] normalized by screen height or raw pixel coordinate",
+        "data_type": "float | null",
+        "example": 349.92
+      },
+      {
+        "canonical_field": "fixation",
+        "dhf1k_source": "1 if 'Fixation' event else 0 (or path to binary fixation PNG)",
+        "data_type": "int | string",
+        "example": 1
+      },
+      {
+        "canonical_field": "saliency_map",
+        "dhf1k_source": "Path to maps/{frame}.png or normalized 2D density array",
+        "data_type": "string | null",
+        "example": "E:\\viral_attention_data\\DHF1K\\annotation\\0001\\maps\\0001.png"
+      },
+      {
+        "canonical_field": "attention_target_type",
+        "dhf1k_source": "'spatial_saliency_density' | 'binary_fixation_map' | 'raw_gaze_point'",
+        "data_type": "string",
+        "example": "spatial_saliency_density"
+      },
+      {
+        "canonical_field": "split",
+        "dhf1k_source": "'train' (1-600), 'val' (601-700), 'test' (701-1000)",
+        "data_type": "string",
+        "example": "train"
+      }
+    ]
+  },
+  "feature_compatibility_matrix": {
+    "production_14_features": [
+      {
+        "feature": "motion_magnitude",
+        "compatible": true,
+        "generation_method": "OpenCV optical flow / frame diff magnitude across 0.5s window",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "motion_std",
+        "compatible": true,
+        "generation_method": "Temporal standard deviation of motion magnitude",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "scene_cut_rate",
+        "compatible": true,
+        "generation_method": "HSV histogram correlation drop below threshold per window",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "time_since_cut",
+        "compatible": true,
+        "generation_method": "Elapsed time in seconds since most recent detected cut",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "brightness_mean",
+        "compatible": true,
+        "generation_method": "Mean luminance Y channel in 0.5s window",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "brightness_std",
+        "compatible": true,
+        "generation_method": "Standard deviation of luminance in 0.5s window",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "contrast",
+        "compatible": true,
+        "generation_method": "Standard deviation of pixel intensities across frames",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "visual_complexity",
+        "compatible": true,
+        "generation_method": "Variance of Laplacian edges in 0.5s window",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "face_presence",
+        "compatible": true,
+        "generation_method": "Haar cascade / face detector ratio across window frames",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "text_presence",
+        "compatible": true,
+        "generation_method": "Sobel horizontal gradient energy in caption band",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "audio_rms",
+        "compatible": true,
+        "generation_method": "FFmpeg audio extraction -> 16kHz mono RMS",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "audio_silence_ratio",
+        "compatible": true,
+        "generation_method": "Fraction of window audio samples with amplitude < 0.015",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "audio_spectral_centroid",
+        "compatible": true,
+        "generation_method": "FFT spectral center of mass in audio window",
+        "verified_on_dhf1k": true
+      },
+      {
+        "feature": "audio_speech_presence",
+        "compatible": true,
+        "generation_method": "Spectral energy in human vocal tract band (300-3400 Hz)",
+        "verified_on_dhf1k": true
+      }
+    ],
+    "all_14_features_extractable": true
+  },
+  "training_targets_identification": {
+    "saliency_target": {
+      "source": "annotation/{seq}/maps/{frame}.png",
+      "type": "Continuous 2D density map (360x640) or window-level summary metrics (peak density, spatial entropy)",
+      "use_case": "Direct 2D video saliency prediction (CNN/Transformer/ViT) or scalar visual attention concentration"
+    },
+    "fixation_target": {
+      "source": "annotation/{seq}/fixation/{frame}.png and fixation/maps/{frame}.mat",
+      "type": "Binary point map indicating consensus fixation locations across 17 observers",
+      "use_case": "NSS (Normalized Scanpath Saliency) training, AUC-Judd loss, fixation rate calculation"
+    },
+    "gaze_derived_target": {
+      "source": "exportdata_train/P{part}/P{part}_Trail{trial}.txt",
+      "type": "Temporal gaze trajectory, saccade rate, fixation duration, pupil dilation (L Dia X/Y)",
+      "use_case": "Exact equivalent of NEMAR human_visual_attention window score, inter-observer gaze dispersion, pupil arousal"
+    }
+  },
+  "recommendation_and_strategy": {
+    "assessment_options": {
+      "A_independent_training": "Train dedicated general-domain attention regressor on DHF1K 600 train / 100 val videos.",
+      "B_combined_training": "Pool NEMAR and DHF1K windows together directly.",
+      "C_pretraining_only": "Pretrain visual spatial backbone on DHF1K, fine-tune on target Reels.",
+      "D_validation_only": "Zero-shot out-of-distribution evaluation of existing NEMAR model on DHF1K."
+    },
+    "evidence_based_recommendation": "Phased Hybrid: D -> A -> B/C",
+    "justification": [
+      "DHF1K provides 700 diverse real-world annotated clips (~12,000 0.5s windows) vs NEMAR's 5 long lecture clips (~2,800 windows).",
+      "Phase 1: Run zero-shot validation (Option D) on DHF1K to benchmark the NEMAR production model on real-world clips without altering production files.",
+      "Phase 2: Train an independent DHF1K model (Option A) saving artifacts as models/human_attention_dhf1k/ to prevent overwriting production model.pkl.",
+      "Phase 3: Domain adaptation / ensemble combining NEMAR's cognitive attention state with DHF1K's visual diversity."
+    ]
+  },
+  "safety_and_integrity_compliance": {
+    "model_pkl_modified": false,
+    "production_dir_modified": false,
+    "v1_0_0_modified": false,
+    "dhf1k_source_modified": false,
+    "training_initiated": false
+  }
+}

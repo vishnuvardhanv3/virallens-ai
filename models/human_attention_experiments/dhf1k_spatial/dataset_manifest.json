@@ -1,0 +1,25 @@
+{
+  "train_samples_count": 2400,
+  "val_samples_count": 400,
+  "train_videos_range": [
+    1,
+    600
+  ],
+  "val_videos_range": [
+    601,
+    700
+  ],
+  "frames_per_video": 4,
+  "progress_coordinates": [
+    0.125,
+    0.375,
+    0.625,
+    0.875
+  ],
+  "input_resolution": [
+    160,
+    90
+  ],
+  "supervision_path_pattern": "DHF1K/annotation/XXXX/maps/YYYY.png",
+  "fixation_path_pattern": "DHF1K/annotation/XXXX/fixation/YYYY.png"
+}

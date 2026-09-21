@@ -1,0 +1,4 @@
+identifier,failure_category,error_message,fabricated_prediction_detected
+negative_missing_file,missing_file,Video file not found: E:\new viral\scratch\nonexistent_video_fixture.mp4,False
+negative_empty_file,empty_or_invalid_frame,Could not open video: E:\new viral\scratch\empty_zero_byte_video.mp4,False
+negative_corrupt_file,decode_failure,Could not open video: E:\new viral\scratch\corrupted_truncated_video.mp4,False

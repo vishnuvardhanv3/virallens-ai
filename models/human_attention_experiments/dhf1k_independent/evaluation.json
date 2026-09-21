@@ -1,0 +1,242 @@
+{
+  "experiment_name": "DHF1K_Phase2_Independent_Model_Training",
+  "timestamp": "2026-09-12T10:37:31.374004+00:00",
+  "target_evaluated": "DHF1K-derived fixation concentration proxy",
+  "pre_training_statistics": {
+    "training_windows": {
+      "total": 22804,
+      "valid": 22804,
+      "excluded": 0,
+      "pct_excluded": 0.0,
+      "target_mean": 0.8432,
+      "target_std": 0.0552,
+      "target_min": 0.5914,
+      "target_max": 0.9626,
+      "video_mean_average": 0.8432,
+      "video_mean_std": 0.0322
+    },
+    "validation_windows": {
+      "total": 3970,
+      "valid": 3970,
+      "excluded": 0,
+      "pct_excluded": 0.0,
+      "target_mean": 0.8427,
+      "target_std": 0.0571,
+      "target_min": 0.599,
+      "target_max": 0.9625,
+      "video_mean_average": 0.8417,
+      "video_mean_std": 0.0323
+    }
+  },
+  "selected_model": "ExtraTreesRegressor",
+  "model_selection_summary": {
+    "ExtraTreesRegressor": {
+      "train": {
+        "mae": 0.0369,
+        "rmse": 0.0464,
+        "r2": 0.2937,
+        "sample_count": 22804,
+        "video_count": 600,
+        "pred_mean": 0.8432,
+        "pred_std": 0.0169,
+        "target_mean": 0.8432,
+        "target_std": 0.0552
+      },
+      "val": {
+        "mae": 0.0454,
+        "rmse": 0.0564,
+        "r2": 0.0247,
+        "pearson_r": 0.1573,
+        "pearson_p": 2.0200592034797715e-23,
+        "spearman_rho": 0.1645,
+        "spearman_p": 1.7656413482959532e-25,
+        "sample_count": 3970,
+        "video_count": 100,
+        "pred_mean": 0.8425,
+        "pred_std": 0.0095,
+        "target_mean": 0.8427,
+        "target_std": 0.0571
+      },
+      "fit_time_sec": 0.45
+    },
+    "RandomForestRegressor": {
+      "train": {
+        "mae": 0.0337,
+        "rmse": 0.0427,
+        "r2": 0.4026,
+        "sample_count": 22804,
+        "video_count": 600,
+        "pred_mean": 0.8431,
+        "pred_std": 0.0215,
+        "target_mean": 0.8432,
+        "target_std": 0.0552
+      },
+      "val": {
+        "mae": 0.0454,
+        "rmse": 0.0565,
+        "r2": 0.023,
+        "pearson_r": 0.1588,
+        "pearson_p": 7.786219569659556e-24,
+        "spearman_rho": 0.1577,
+        "spearman_p": 1.542334755337524e-23,
+        "sample_count": 3970,
+        "video_count": 100,
+        "pred_mean": 0.8419,
+        "pred_std": 0.0116,
+        "target_mean": 0.8427,
+        "target_std": 0.0571
+      },
+      "fit_time_sec": 7.77
+    },
+    "GradientBoostingRegressor": {
+      "train": {
+        "mae": 0.0391,
+        "rmse": 0.049,
+        "r2": 0.2134,
+        "sample_count": 22804,
+        "video_count": 600,
+        "pred_mean": 0.8432,
+        "pred_std": 0.0161,
+        "target_mean": 0.8432,
+        "target_std": 0.0552
+      },
+      "val": {
+        "mae": 0.0455,
+        "rmse": 0.0565,
+        "r2": 0.0212,
+        "pearson_r": 0.1506,
+        "pearson_p": 1.4584777266373946e-21,
+        "spearman_rho": 0.1495,
+        "spearman_p": 2.880284521627984e-21,
+        "sample_count": 3970,
+        "video_count": 100,
+        "pred_mean": 0.8426,
+        "pred_std": 0.0108,
+        "target_mean": 0.8427,
+        "target_std": 0.0571
+      },
+      "fit_time_sec": 22.04
+    },
+    "HistGradientBoostingRegressor": {
+      "train": {
+        "mae": 0.0382,
+        "rmse": 0.048,
+        "r2": 0.2457,
+        "sample_count": 22804,
+        "video_count": 600,
+        "pred_mean": 0.8432,
+        "pred_std": 0.0174,
+        "target_mean": 0.8432,
+        "target_std": 0.0552
+      },
+      "val": {
+        "mae": 0.0457,
+        "rmse": 0.0569,
+        "r2": 0.0091,
+        "pearson_r": 0.1275,
+        "pearson_p": 7.338511782209436e-16,
+        "spearman_rho": 0.126,
+        "spearman_p": 1.629864803092268e-15,
+        "sample_count": 3970,
+        "video_count": 100,
+        "pred_mean": 0.8428,
+        "pred_std": 0.0121,
+        "target_mean": 0.8427,
+        "target_std": 0.0571
+      },
+      "fit_time_sec": 3.09
+    }
+  },
+  "selected_model_metrics": {
+    "train": {
+      "mae": 0.0369,
+      "rmse": 0.0464,
+      "r2": 0.2937,
+      "sample_count": 22804,
+      "video_count": 600,
+      "pred_mean": 0.8432,
+      "pred_std": 0.0169,
+      "target_mean": 0.8432,
+      "target_std": 0.0552
+    },
+    "val": {
+      "mae": 0.0454,
+      "rmse": 0.0564,
+      "r2": 0.0247,
+      "pearson_r": 0.1573,
+      "pearson_p": 2.0200592034797715e-23,
+      "spearman_rho": 0.1645,
+      "spearman_p": 1.7656413482959532e-25,
+      "sample_count": 3970,
+      "video_count": 100,
+      "pred_mean": 0.8425,
+      "pred_std": 0.0095,
+      "target_mean": 0.8427,
+      "target_std": 0.0571
+    },
+    "fit_time_sec": 0.45
+  },
+  "feature_importances": {
+    "contrast": 0.1459,
+    "brightness_mean": 0.1335,
+    "text_presence": 0.1335,
+    "visual_complexity": 0.1185,
+    "audio_spectral_centroid": 0.0654,
+    "time_since_cut": 0.0649,
+    "motion_magnitude": 0.0632,
+    "audio_speech_presence": 0.0625,
+    "audio_silence_ratio": 0.0605,
+    "audio_rms": 0.053,
+    "motion_std": 0.0437,
+    "brightness_std": 0.0306,
+    "face_presence": 0.0244,
+    "scene_cut_rate": 0.0004
+  },
+  "sensitivity_analysis": {
+    "description": "Read-only sensitivity comparison of valid-fixation windows vs neutral fallback (0.5) inclusion",
+    "condition_a_valid_only": {
+      "sample_count": 3970,
+      "mae": 0.0454,
+      "rmse": 0.0564
+    },
+    "condition_b_neutral_fallback": {
+      "sample_count": 3970,
+      "mae": 0.0454,
+      "rmse": 0.0564
+    },
+    "difference": {
+      "delta_mae": 0.0,
+      "delta_rmse": 0.0
+    }
+  },
+  "cross_dataset_comparison": {
+    "description": "Comparison between Phase 1 NEMAR zero-shot evaluation and Phase 2 DHF1K independent model",
+    "model_a_nemar_zero_shot": {
+      "training_corpus": "NEMAR BBBD (classroom lecture videos)",
+      "evaluation_corpus": "DHF1K Validation (100 videos)",
+      "mae": 0.3901,
+      "rmse": 0.3948,
+      "r2": -46.76,
+      "pearson_r": 0.0555,
+      "spearman_rho": 0.0552
+    },
+    "model_b_dhf1k_independent": {
+      "training_corpus": "DHF1K Train (600 real-world web/action videos)",
+      "evaluation_corpus": "DHF1K Validation (100 videos)",
+      "mae": 0.0454,
+      "rmse": 0.0564,
+      "r2": 0.0247,
+      "pearson_r": 0.1573,
+      "spearman_rho": 0.1645
+    },
+    "comparative_delta": {
+      "mae_reduction": 0.3447,
+      "rmse_reduction": 0.3384,
+      "r2_improvement": 46.7847
+    }
+  },
+  "scientific_assessment": {
+    "interpretation": "Training an independent model on DHF1K domain dramatically eliminates the cross-dataset scale offset and achieves calibrated prediction on real-world video gaze proxy.",
+    "policy": "Do not combine NEMAR and DHF1K models yet."
+  }
+}

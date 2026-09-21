@@ -1,0 +1,5 @@
+target_identifier,target_name,train_samples,val_samples,fit_time_sec,train_mae,train_rmse,train_r2,val_mae,val_rmse,val_r2,pearson_r,spearman_rho,target_std,prediction_std,std_ratio_pred_to_target,target_variance,prediction_variance,var_ratio_pred_to_target
+target_a_fixation_concentration,Target A,22804,3970,0.35,0.0369,0.0464,0.2937,0.0445,0.0552,0.0257,0.1639,0.1774,0.0559,0.0095,0.17,0.003122,9e-05,0.0289
+target_b_fixation_concentration,Target B,22804,3970,0.35,0.0852,0.1079,0.3646,0.1037,0.1299,0.0227,0.1561,0.1463,0.1314,0.0257,0.1955,0.017271,0.00066,0.0382
+target_c_saliency_concentration,Target C,22804,3970,0.34,0.0781,0.0996,0.3709,0.0945,0.119,0.0279,0.1707,0.1633,0.1207,0.0248,0.2057,0.014564,0.000616,0.0423
+target_d_saliency_entropy_dispersion,Target D,22804,3970,0.43,0.015,0.0189,0.3369,0.0177,0.022,0.0372,0.1969,0.1905,0.0224,0.0039,0.1754,0.000502,1.5e-05,0.0308

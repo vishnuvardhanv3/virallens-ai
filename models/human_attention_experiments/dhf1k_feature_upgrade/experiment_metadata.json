@@ -1,0 +1,27 @@
+{
+  "experiment": "DHF1K_Phase5_Feature_Representation_Upgrade",
+  "timestamp": "2026-09-12T11:26:49.754195+00:00",
+  "train_videos": "001.AVI through 600.AVI",
+  "val_videos": "601.AVI through 700.AVI",
+  "window_size_sec": 0.5,
+  "target": "DHF1K-derived fixation concentration proxy",
+  "winning_candidate": {
+    "model_name": "ExtraTreesRegressor",
+    "feature_set": "set_c2_bidirectional_context",
+    "feature_count": 42
+  },
+  "decision": {
+    "status": "Representation upgrade marginal / Phase 2 model retained",
+    "rationale": "The representation upgrade yields a marginal change over the Phase 2 baseline (Delta MAE = +0.0000, relative = +0.00%, Delta R^2 = +0.0009). The 95% bootstrap confidence interval [-0.0003, +0.0002] contains zero, confirming the difference is not statistically distinguishable from zero. Per-video balance is 49 improved vs 42 worsened.",
+    "recommendation": "Retain Phase 2 independent model (models/human_attention_experiments/dhf1k_independent/model_dhf1k.pkl) unchanged.",
+    "decision_factors": {
+      "absolute_mae_change": 0.0,
+      "relative_mae_change_pct": 0.0,
+      "r2_change": 0.0009,
+      "bootstrap_95_ci": "[-0.0003, +0.0002]",
+      "videos_improved_vs_worsened": "49 improved vs 42 worsened",
+      "tail_degradation_detected": false,
+      "temporal_instability_detected": false
+    }
+  }
+}

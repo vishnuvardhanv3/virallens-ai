@@ -1,0 +1,225 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RecommendationIntelligenceSchema",
+  "description": "ViralLens Phase 16 Canonical Recommendation Intelligence Schema for evidence-backed creative decision support.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "target_reel_id",
+    "comparison_group",
+    "competitor_count",
+    "subgroup_sample_size",
+    "recommendations_count",
+    "recommendations",
+    "categories",
+    "evidence_graph",
+    "provenance",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["1.0.0"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["SUCCESS", "NO_ACTIONABLE_RECOMMENDATION", "PARTIAL"]
+    },
+    "target_reel_id": {
+      "type": "string"
+    },
+    "comparison_group": {
+      "type": "string",
+      "enum": [
+        "same_entity_and_edit_type",
+        "same_edit_type",
+        "all_verified",
+        "highest_reach_same_edit_type",
+        "none"
+      ]
+    },
+    "competitor_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "subgroup_sample_size": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "recommendations_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RecommendationItem"
+      }
+    },
+    "categories": {
+      "type": "object",
+      "required": [
+        "PRESERVE",
+        "CHANGE",
+        "TEST",
+        "AVOID_OVERINTERPRETATION",
+        "INVESTIGATE",
+        "NO_ACTIONABLE_RECOMMENDATION"
+      ],
+      "properties": {
+        "PRESERVE": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RecommendationItem" }
+        },
+        "CHANGE": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RecommendationItem" }
+        },
+        "TEST": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RecommendationItem" }
+        },
+        "AVOID_OVERINTERPRETATION": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RecommendationItem" }
+        },
+        "INVESTIGATE": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RecommendationItem" }
+        },
+        "NO_ACTIONABLE_RECOMMENDATION": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RecommendationItem" }
+        }
+      }
+    },
+    "evidence_graph": {
+      "type": "object",
+      "required": ["target_reel_id", "nodes"],
+      "properties": {
+        "target_reel_id": { "type": "string" },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "recommendation_id",
+              "category",
+              "target_state",
+              "feature",
+              "pattern",
+              "peer_evidence",
+              "gap",
+              "recommendation",
+              "trace"
+            ]
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "target_reel_id",
+        "comparison_group",
+        "competitor_count",
+        "zero_network_calls",
+        "zero_duplicate_inference",
+        "zero_fabricated_confidence"
+      ]
+    },
+    "limitations": {
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "RecommendationItem": {
+      "type": "object",
+      "required": [
+        "recommendation_id",
+        "category",
+        "priority",
+        "observation",
+        "evidence",
+        "target_comparison",
+        "creative_implication",
+        "recommendation",
+        "testable_action",
+        "strength",
+        "confidence",
+        "limitation",
+        "provenance"
+      ],
+      "properties": {
+        "recommendation_id": { "type": "string" },
+        "category": {
+          "type": "string",
+          "enum": [
+            "PRESERVE",
+            "CHANGE",
+            "TEST",
+            "AVOID_OVERINTERPRETATION",
+            "INVESTIGATE",
+            "NO_ACTIONABLE_RECOMMENDATION"
+          ]
+        },
+        "priority": {
+          "type": "string",
+          "enum": ["high", "medium", "low"]
+        },
+        "observation": { "type": "string" },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "source", "value", "provenance"],
+            "properties": {
+              "type": { "type": "string" },
+              "source": { "type": "string" },
+              "value": { "type": "string" },
+              "numerator": { "type": ["integer", "null"] },
+              "denominator": { "type": ["integer", "null"] },
+              "competitor_ids": { "type": "array", "items": { "type": "string" } },
+              "provenance": { "type": "object" }
+            }
+          }
+        },
+        "target_comparison": {
+          "type": "object",
+          "required": ["target", "comparison_group", "difference"],
+          "properties": {
+            "target": { "type": "string" },
+            "comparison_group": { "type": "string" },
+            "difference": { "type": "string" }
+          }
+        },
+        "creative_implication": { "type": "string" },
+        "recommendation": { "type": "string" },
+        "testable_action": { "type": "string" },
+        "strength": {
+          "type": "string",
+          "enum": [
+            "strong_observed_evidence",
+            "moderate_observed_evidence",
+            "exploratory_evidence",
+            "insufficient_evidence"
+          ]
+        },
+        "confidence": {
+          "type": "null"
+        },
+        "limitation": { "type": "string" },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "target_reel_id",
+            "comparison_group",
+            "competitor_reel_ids",
+            "source_features"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "experiment_name": "DHF1K_Phase1_ZeroShot_CrossDataset_Validation",
+  "timestamp": "2026-09-20T06:31:15.309204+00:00",
+  "production_model": {
+    "model_file": "E:\\new viral\\models\\human_attention\\model.pkl",
+    "training_provenance": "NEMAR BBBD Experiment 1 (ses-01 attentive)",
+    "feature_schema": [
+      "motion_magnitude",
+      "motion_std",
+      "scene_cut_rate",
+      "time_since_cut",
+      "brightness_mean",
+      "brightness_std",
+      "contrast",
+      "visual_complexity",
+      "face_presence",
+      "text_presence",
+      "audio_rms",
+      "audio_silence_ratio",
+      "audio_spectral_centroid",
+      "audio_speech_presence"
+    ]
+  },
+  "dataset_evaluated": {
+    "source": "DHF1K",
+    "split": "val",
+    "video_count_evaluated": 100,
+    "video_count_total": 100,
+    "video_range": "601.AVI - 700.AVI",
+    "windows_evaluated": 3970,
+    "window_duration_sec": 0.5,
+    "feature_extraction_success_count": 100,
+    "target_construction_success_count": 100,
+    "failed_videos": [],
+    "missing_or_invalid_samples": 0
+  },
+  "prediction_statistics": {
+    "min": 0.3645,
+    "max": 0.5259,
+    "mean": 0.4526,
+    "std": 0.0239,
+    "median": 0.4561
+  },
+  "metrics_by_target": {
+    "target_b_fixation_concentration": {
+      "target_name": "Target B: Fixation-Derived Attention Concentration",
+      "description": "Independent spatial concentration derived from consensus fixation points across 17 observers using formula: max(0, 1 - min(1, 2*dispersion)). Not mathematically equivalent to NEMAR target.",
+      "sample_count": 3970,
+      "mae": 0.3901,
+      "rmse": 0.3948,
+      "r2": -46.76,
+      "pearson_r": 0.0555,
+      "pearson_p_value": 0.00046939353680845904,
+      "spearman_rho": 0.0552,
+      "spearman_p_value": 0.0004983397454502614,
+      "ground_truth_stats": {
+        "min": 0.599,
+        "max": 0.9625,
+        "mean": 0.8427,
+        "std": 0.0571,
+        "median": 0.8486
+      }
+    },
+    "target_a_saliency_peak": {
+      "target_name": "Target A1: Saliency-Density Peak Concentration",
+      "description": "Empirical human visual attention density map peak value normalized to [0, 1].",
+      "sample_count": 3970,
+      "mae": 0.5474,
+      "rmse": 0.5479,
+      "r2": 0.0,
+      "pearson_r": null,
+      "pearson_p_value": null,
+      "spearman_rho": null,
+      "spearman_p_value": null,
+      "ground_truth_stats": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "median": 1.0
+      }
+    },
+    "target_a_saliency_entropy": {
+      "target_name": "Target A2: Saliency-Density Spatial Entropy Concentration",
+      "description": "Spatial concentration measured via 1.0 - (Shannon Entropy / log2(360x640)) on ground-truth continuous saliency maps.",
+      "sample_count": 3970,
+      "mae": 0.2163,
+      "rmse": 0.2187,
+      "r2": -94.337,
+      "pearson_r": 0.0487,
+      "pearson_p_value": 0.0021568752737775314,
+      "spearman_rho": 0.0427,
+      "spearman_p_value": 0.007065342705976152,
+      "ground_truth_stats": {
+        "min": 0.1613,
+        "max": 0.3108,
+        "mean": 0.2363,
+        "std": 0.0224,
+        "median": 0.2347
+      }
+    }
+  },
+  "cross_dataset_target_definition_comparison": {
+    "note": "Cross-dataset target-definition comparison, not mathematical equivalence. Targets stem from distinct experimental methodologies and observer counts.",
+    "target_b_gt_mean": 0.8427,
+    "nemar_training_target_mean": 0.4557,
+    "calibration_mean_offset": -0.3901
+  },
+  "domain_shift_summary": {
+    "highest_domain_shift_features": [
+      {
+        "feature": "brightness_mean",
+        "dhf1k_mean": 0.4486,
+        "nemar_mean": 0.7436,
+        "dhf1k_std": 0.1367,
+        "nemar_std": 0.1872,
+        "mean_shift": -0.295,
+        "z_shift": -1.58
+      },
+      {
+        "feature": "audio_silence_ratio",
+        "dhf1k_mean": 0.3311,
+        "nemar_mean": 0.1817,
+        "dhf1k_std": 0.3011,
+        "nemar_std": 0.1237,
+        "mean_shift": 0.1494,
+        "z_shift": 1.21
+      },
+      {
+        "feature": "time_since_cut",
+        "dhf1k_mean": 11.095,
+        "nemar_mean": 123.9291,
+        "dhf1k_std": 7.9861,
+        "nemar_std": 120.2728,
+        "mean_shift": -112.8341,
+        "z_shift": -0.94
+      },
+      {
+        "feature": "contrast",
+        "dhf1k_mean": 0.243,
+        "nemar_mean": 0.1664,
+        "dhf1k_std": 0.0545,
+        "nemar_std": 0.0864,
+        "mean_shift": 0.0766,
+        "z_shift": 0.89
+      },
+      {
+        "feature": "motion_magnitude",
+        "dhf1k_mean": 0.0259,
+        "nemar_mean": 0.01,
+        "dhf1k_std": 0.0238,
+        "nemar_std": 0.0188,
+        "mean_shift": 0.0159,
+        "z_shift": 0.85
+      }
+    ]
+  },
+  "scientific_assessment": {
+    "primary_target": "target_b_fixation_concentration",
+    "transfer_status": "Weak / Not practically established",
+    "transfer_observed": false,
+    "correlation_pearson": 0.0555,
+    "correlation_spearman": 0.0552,
+    "mae": 0.3901,
+    "rmse": 0.3948,
+    "r2_target_b": -46.76,
+    "r2_target_a2": -94.337,
+    "scientific_interpretation": [
+      "Pearson r \u2248 0.0555 is a very weak linear association.",
+      "Spearman rho \u2248 0.0552 is a very weak monotonic association.",
+      "Statistical significance (p < 0.001) is an artifact of the large sample size (N = 3,970) and does NOT imply useful predictive transfer; r \u2248 0.0555 explains less than 0.31% of the target variance (r\u00b2 \u2248 0.0031).",
+      "Target B R\u00b2 = -46.76 indicates very poor predictive agreement compared to a simple horizontal mean baseline.",
+      "Target A2 R\u00b2 = -94.34 indicates very poor predictive agreement for spatial entropy concentration.",
+      "Target A1 (peak saliency) is effectively constant (mean = 1.0, std = 0.0), rendering correlation undefined.",
+      "DHF1K and NEMAR target-definition differences and severe feature domain shifts (e.g. brightness, silence ratio, cut duration) contribute to the observed mismatch.",
+      "Phase 1 demonstrates successful zero-shot execution, measurable but extremely weak cross-dataset association, and substantial domain/target mismatch, but does NOT establish useful predictive transfer."
+    ],
+    "recommendations": {
+      "phase_2": "Train an INDEPENDENT DHF1K model first in an isolated directory (models/human_attention_dhf1k/).",
+      "ensemble_policy": "Do not combine NEMAR and DHF1K models yet."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "architecture": "TinySalNet",
+  "input_resolution": [
+    160,
+    90
+  ],
+  "output_resolution": [
+    160,
+    90
+  ],
+  "num_parameters": 96521,
+  "train_videos": "001-600 (600 videos)",
+  "val_videos": "601-700 (100 videos)",
+  "temporal_sampling_rule": "Deterministic 4 frames per video at progress coordinates [0.125, 0.375, 0.625, 0.875]",
+  "loss_function": "Spatial Kullback-Leibler (KL) Divergence: D_KL(target || pred)",
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "epochs": 5,
+  "batch_size": 32,
+  "random_seed": 42,
+  "supervision_name": "DHF1K saliency-density supervision",
+  "reference_name": "DHF1K fixation map"
+}

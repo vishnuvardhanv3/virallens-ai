@@ -1,0 +1,23 @@
+{
+  "component": "ViralLens Phase 11 Human Qualitative Utility Evaluation",
+  "phase": "Phase 11",
+  "cohort_description": "Model-telemetry-selected convenience samples (20 static frames across 8 defined visual strata + 10 temporal sequence frames) drawn from 15 authentic ViralLens-compatible videos. Ratings represent perceived usefulness for this specific sample and are not generalized to all Instagram Reels.",
+  "model_provenance": {
+    "name": "TinySalNet",
+    "parameters": 96521,
+    "weights_path": "E:\\new viral\\models\\human_attention_experiments\\dhf1k_spatial\\spatial_model.pt",
+    "weights_sha256": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+    "training_dataset": "DHF1K continuous saliency-density supervision",
+    "execution_device": "CPU"
+  },
+  "review_design": {
+    "total_items": 30,
+    "static_items": 20,
+    "temporal_sequence_items": 10,
+    "reviewers_count": 3,
+    "total_ratings_collected": 390,
+    "blinded_presentation": true,
+    "model_scores_exposed_to_reviewers": false
+  },
+  "classification": "A. Human-useful"
+}

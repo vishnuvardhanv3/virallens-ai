@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-09-16T21:21:00.483582",
+  "competitors_evaluated": 32,
+  "htdyr": {
+    "video_label": "htdyr",
+    "video_path": "E:\\new viral\\htdyr.mp4",
+    "latencies": {
+      "computation_ms": 0.102,
+      "serialization_ms": 0.718,
+      "report_generation_ms": 0.134,
+      "total_ms": 0.955
+    },
+    "comparison_group": "same_entity_and_edit_type",
+    "competitor_count": 32,
+    "subgroup_sample_size": 21,
+    "recommendations_count": 3,
+    "categories_summary": {
+      "PRESERVE": 1,
+      "CHANGE": 1,
+      "TEST": 1,
+      "AVOID_OVERINTERPRETATION": 0,
+      "INVESTIGATE": 0,
+      "NO_ACTIONABLE_RECOMMENDATION": 0
+    },
+    "recommendations_sample": [
+      {
+        "id": "rec_change_early_typography",
+        "category": "CHANGE",
+        "priority": "high",
+        "strength": "strong_observed_evidence",
+        "observation": "No readable on-screen typography was detected within the opening 2.0 seconds.",
+        "recommendation": "Consider introducing a punchy on-screen title card or key dialogue quote within the opening 1.5 seconds.",
+        "testable_action": "Create Variant B with a 2-to-4 word hook title card in the opening 1.0s and test comprehension in review.",
+        "limitation": "Text overlay value depends heavily on font legibility, contrast against background, and safe-zone compliance.",
+        "evidence_sample": "19/21 (90.5%) peers utilize on-screen typography within the first 2.0 seconds"
+      },
+      {
+        "id": "rec_preserve_spatial_focus",
+        "category": "PRESERVE",
+        "priority": "medium",
+        "strength": "exploratory_evidence",
+        "observation": "Target exhibits concentrated opening visual focus (dispersion: 0.280, focal concentration: 0.62).",
+        "recommendation": "PRESERVE: Maintain the current concentrated visual framing around the primary subject in the opening 1.5 seconds.",
+        "testable_action": "Keep the existing opening framing intact as the baseline control for creative variations.",
+        "limitation": "Laboratory-derived gaze prediction measures visual conspicuity and does not guarantee mobile retention.",
+        "evidence_sample": "0/21 (0.0%) peers exhibit concentrated opening spatial focus"
+      },
+      {
+        "id": "rec_change_cut_pacing",
+        "category": "TEST",
+        "priority": "medium",
+        "strength": "moderate_observed_evidence",
+        "observation": "Target exhibits static scene progression (1 transitions observed across duration).",
+        "recommendation": "Consider introducing b-roll cutaways, punch-in focal reframes, or match cuts every 2.0 to 2.5 seconds.",
+        "testable_action": "Edit Variant B with quick cutaways to action details or rhythmic push-ins on beat drops.",
+        "limitation": "Cut frequency must align with narrative tone; dialogue or educational content often benefits from longer continuous takes.",
+        "evidence_sample": "13/21 (61.9%) peers maintain dynamic cut pacing (3+ scene shifts)"
+      }
+    ],
+    "evidence_graph_nodes": 3,
+    "provenance": {
+      "target_reel_id": "htdyr",
+      "comparison_group": "same_entity_and_edit_type",
+      "competitor_count": 32,
+      "zero_network_calls": true,
+      "zero_duplicate_inference": true,
+      "zero_fabricated_confidence": true
+    },
+    "report_has_section": true
+  },
+  "upload_jvxawbcy": {
+    "video_label": "upload_jvxawbcy",
+    "video_path": "C:\\Users\\vishn\\AppData\\Local\\Temp\\virallens_uploads\\upload_jvxawbcy.mp4",
+    "latencies": {
+      "computation_ms": 0.072,
+      "serialization_ms": 0.468,
+      "report_generation_ms": 0.127,
+      "total_ms": 0.668
+    },
+    "comparison_group": "same_entity_and_edit_type",
+    "competitor_count": 32,
+    "subgroup_sample_size": 21,
+    "recommendations_count": 3,
+    "categories_summary": {
+      "PRESERVE": 0,
+      "CHANGE": 1,
+      "TEST": 2,
+      "AVOID_OVERINTERPRETATION": 0,
+      "INVESTIGATE": 0,
+      "NO_ACTIONABLE_RECOMMENDATION": 0
+    },
+    "recommendations_sample": [
+      {
+        "id": "rec_change_early_typography",
+        "category": "CHANGE",
+        "priority": "high",
+        "strength": "strong_observed_evidence",
+        "observation": "No readable on-screen typography was detected within the opening 2.0 seconds.",
+        "recommendation": "Consider introducing a punchy on-screen title card or key dialogue quote within the opening 1.5 seconds.",
+        "testable_action": "Create Variant B with a 2-to-4 word hook title card in the opening 1.0s and test comprehension in review.",
+        "limitation": "Text overlay value depends heavily on font legibility, contrast against background, and safe-zone compliance.",
+        "evidence_sample": "19/21 (90.5%) peers utilize on-screen typography within the first 2.0 seconds"
+      },
+      {
+        "id": "rec_change_spatial_focus",
+        "category": "TEST",
+        "priority": "medium",
+        "strength": "exploratory_evidence",
+        "observation": "Target opening visual saliency is diffusely distributed across competing regions (dispersion: 0.420, state: 'moderate_competition').",
+        "recommendation": "Consider simplifying the opening composition so that the primary subject or character remains visually dominant.",
+        "testable_action": "Create Variant B by reducing background motion, cropping closer to the primary character, or dimming peripheral graphics during the first 1.5s, then compare focal clarity against current Variant A.",
+        "limitation": "Observational comparison within the selected verified competitor cohort; does not prove that concentrated framing causes improved viewer retention.",
+        "evidence_sample": "0/21 (0.0%) peers exhibit concentrated opening spatial focus"
+      },
+      {
+        "id": "rec_change_cut_pacing",
+        "category": "TEST",
+        "priority": "medium",
+        "strength": "moderate_observed_evidence",
+        "observation": "Target exhibits static scene progression (1 transitions observed across duration).",
+        "recommendation": "Consider introducing b-roll cutaways, punch-in focal reframes, or match cuts every 2.0 to 2.5 seconds.",
+        "testable_action": "Edit Variant B with quick cutaways to action details or rhythmic push-ins on beat drops.",
+        "limitation": "Cut frequency must align with narrative tone; dialogue or educational content often benefits from longer continuous takes. Note: Increase cut frequency only after primary visual subject focus has been established to avoid ocular disorientation.",
+        "evidence_sample": "13/21 (61.9%) peers maintain dynamic cut pacing (3+ scene shifts)"
+      }
+    ],
+    "evidence_graph_nodes": 3,
+    "provenance": {
+      "target_reel_id": "upload_jvxawbcy",
+      "comparison_group": "same_entity_and_edit_type",
+      "competitor_count": 32,
+      "zero_network_calls": true,
+      "zero_duplicate_inference": true,
+      "zero_fabricated_confidence": true
+    },
+    "report_has_section": true
+  }
+}

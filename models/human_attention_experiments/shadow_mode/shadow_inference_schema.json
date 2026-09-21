@@ -1,0 +1,172 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ViralLensShadowSpatialSignal",
+  "type": "object",
+  "required": [
+    "status",
+    "model_provenance",
+    "sampling_metadata",
+    "summary",
+    "samples",
+    "telemetry"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "SUCCESS",
+        "FAILED",
+        "DISABLED"
+      ]
+    },
+    "error": {
+      "type": "string"
+    },
+    "model_provenance": {
+      "type": "object",
+      "properties": {
+        "architecture": {
+          "type": "string"
+        },
+        "training_supervision": {
+          "type": "string"
+        },
+        "model_hash": {
+          "type": "string"
+        },
+        "execution_device": {
+          "type": "string"
+        }
+      }
+    },
+    "sampling_metadata": {
+      "type": "object",
+      "properties": {
+        "sampling_rule": {
+          "type": "string"
+        },
+        "video_fps": {
+          "type": "number"
+        },
+        "total_video_frames": {
+          "type": "integer"
+        },
+        "sampled_frame_count": {
+          "type": "integer"
+        },
+        "frame_indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "timestamps_sec": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "mean_spatial_dispersion": {
+          "type": "number"
+        },
+        "mean_spatial_entropy_bits": {
+          "type": "number"
+        },
+        "mean_inter_frame_shift": {
+          "type": "number"
+        }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_video_path",
+          "frame_idx",
+          "timestamp_sec",
+          "input_width",
+          "input_height",
+          "model_version",
+          "model_hash",
+          "saliency_spatial_dispersion",
+          "saliency_spatial_entropy_bits",
+          "saliency_centroid_x",
+          "saliency_centroid_y",
+          "saliency_peak_x",
+          "saliency_peak_y",
+          "inter_frame_saliency_shift"
+        ],
+        "properties": {
+          "source_video_path": {
+            "type": "string"
+          },
+          "frame_idx": {
+            "type": "integer"
+          },
+          "timestamp_sec": {
+            "type": "number"
+          },
+          "input_width": {
+            "type": "integer"
+          },
+          "input_height": {
+            "type": "integer"
+          },
+          "model_version": {
+            "type": "string"
+          },
+          "model_hash": {
+            "type": "string"
+          },
+          "saliency_spatial_dispersion": {
+            "type": "number"
+          },
+          "saliency_spatial_entropy_bits": {
+            "type": "number"
+          },
+          "saliency_centroid_x": {
+            "type": "number"
+          },
+          "saliency_centroid_y": {
+            "type": "number"
+          },
+          "saliency_peak_x": {
+            "type": "number"
+          },
+          "saliency_peak_y": {
+            "type": "number"
+          },
+          "inter_frame_saliency_shift": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "telemetry": {
+      "type": "object",
+      "properties": {
+        "shadow_start": {
+          "type": "number"
+        },
+        "shadow_end": {
+          "type": "number"
+        },
+        "shadow_total_wall_time": {
+          "type": "number"
+        },
+        "number_of_frames": {
+          "type": "integer"
+        },
+        "shadow_ms_per_frame": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

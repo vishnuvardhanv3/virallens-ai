@@ -1,0 +1,19 @@
+{
+  "component": "ViralLens Phase 10 Real-Reel Shadow Saliency Evaluation",
+  "phase": "Phase 10",
+  "cohort_description": "Convenience sample of 15 authentic ViralLens-compatible real Instagram Reel MP4 videos drawn from the workspace (htdyr.mp4 and media/competitors/). This sample demonstrates operational stability across available formats but is not claimed as universally representative of all Instagram content.",
+  "model_provenance": {
+    "model_name": "TinySalNet",
+    "parameters": 96521,
+    "weights_path": "E:\\new viral\\models\\human_attention_experiments\\dhf1k_spatial\\spatial_model.pt",
+    "weights_sha256": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+    "training_dataset": "DHF1K continuous saliency-density supervision",
+    "execution_device": "CPU"
+  },
+  "negative_controls_evaluated": 3,
+  "real_videos_evaluated": 15,
+  "real_videos_succeeded": 15,
+  "total_frames_evaluated": 228,
+  "sampling_rule": "Deterministic ~1 fps capped at 20 frames per video",
+  "classification": "A. Operationally promising"
+}

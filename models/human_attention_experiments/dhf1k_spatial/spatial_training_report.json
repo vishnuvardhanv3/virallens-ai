@@ -1,0 +1,273 @@
+{
+  "summary": "Phase 7 DHF1K Spatial Saliency Prototype Evaluation",
+  "supervision_type": "DHF1K saliency-density supervision",
+  "model_architecture": "TinySalNet (~85k params)",
+  "training_resources": {
+    "device": "cpu",
+    "training_time_seconds": 370.54,
+    "validation_time_seconds": 9.62,
+    "batch_size": 32,
+    "total_train_frames": 2400,
+    "total_val_frames": 400,
+    "train_loss_history": [
+      2.3994,
+      2.1215,
+      1.9942,
+      1.9035,
+      1.833
+    ],
+    "val_loss_history": [
+      2.1718,
+      2.0806,
+      2.0619,
+      2.0264,
+      2.0327
+    ]
+  },
+  "aggregate_metrics": {
+    "model_nss_mean": 1.6308679422855423,
+    "model_nss_median": 1.4305826024322803,
+    "model_nss_std": 1.2300043197216362,
+    "baseline_nss_mean": 0.0,
+    "model_auc_judd_mean": 0.8647218717173379,
+    "model_auc_judd_median": 0.882308874610964,
+    "model_auc_judd_std": 0.09631260251998516,
+    "baseline_auc_judd_mean": 0.544114576188616,
+    "model_kl_mean": 2.0326699527887446,
+    "model_kl_median": 1.9394207551723963,
+    "model_kl_std": 0.6202972516495153,
+    "baseline_kl_mean": 2.9058279714883337,
+    "model_cc_mean": 0.314869539845127,
+    "model_cc_median": 0.29837776950173167,
+    "model_cc_std": 0.19215461768131983,
+    "baseline_cc_mean": 0.0,
+    "model_sim_mean": 0.23743409308264582,
+    "model_sim_median": 0.23112363122776436,
+    "model_sim_std": 0.08744800233044285,
+    "baseline_sim_mean": 0.10052464774962853
+  },
+  "temporal_quartile_breakdown": [
+    {
+      "temporal_quartile": 1,
+      "model_nss": 1.612564794429271,
+      "model_auc_judd": 0.8584228882821473,
+      "model_kl": 2.0303679615993544,
+      "model_cc": 0.3145872008992176,
+      "model_sim": 0.23766023160811764,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5420428503280388,
+      "baseline_kl": 2.8701353866179655
+    },
+    {
+      "temporal_quartile": 2,
+      "model_nss": 1.463847673917291,
+      "model_auc_judd": 0.8519507502266634,
+      "model_kl": 2.118900958042337,
+      "model_cc": 0.28817057926692746,
+      "model_sim": 0.23037067101000858,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5419397829472332,
+      "baseline_kl": 2.8715207289432527
+    },
+    {
+      "temporal_quartile": 3,
+      "model_nss": 1.6720691429419967,
+      "model_auc_judd": 0.8753779846859817,
+      "model_kl": 1.9739060513537998,
+      "model_cc": 0.32348141629063887,
+      "model_sim": 0.24145536940000742,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5543094090910913,
+      "baseline_kl": 2.911070586843871
+    },
+    {
+      "temporal_quartile": 4,
+      "model_nss": 1.774990157853611,
+      "model_auc_judd": 0.873135863674559,
+      "model_kl": 2.0075048401594873,
+      "model_cc": 0.3332389629237241,
+      "model_sim": 0.24025010031244967,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5381662623881008,
+      "baseline_kl": 2.9705851835482466
+    }
+  ],
+  "sampling_coordinate_breakdown": [
+    {
+      "progress_coord": 0.125,
+      "model_nss": 1.612564794429271,
+      "model_auc_judd": 0.8584228882821473,
+      "model_kl": 2.0303679615993544,
+      "model_cc": 0.3145872008992176,
+      "model_sim": 0.23766023160811764,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5420428503280388,
+      "baseline_kl": 2.8701353866179655
+    },
+    {
+      "progress_coord": 0.375,
+      "model_nss": 1.463847673917291,
+      "model_auc_judd": 0.8519507502266634,
+      "model_kl": 2.118900958042337,
+      "model_cc": 0.28817057926692746,
+      "model_sim": 0.23037067101000858,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5419397829472332,
+      "baseline_kl": 2.8715207289432527
+    },
+    {
+      "progress_coord": 0.625,
+      "model_nss": 1.6720691429419967,
+      "model_auc_judd": 0.8753779846859817,
+      "model_kl": 1.9739060513537998,
+      "model_cc": 0.32348141629063887,
+      "model_sim": 0.24145536940000742,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5543094090910913,
+      "baseline_kl": 2.911070586843871
+    },
+    {
+      "progress_coord": 0.875,
+      "model_nss": 1.774990157853611,
+      "model_auc_judd": 0.873135863674559,
+      "model_kl": 2.0075048401594873,
+      "model_cc": 0.3332389629237241,
+      "model_sim": 0.24025010031244967,
+      "baseline_nss": 0.0,
+      "baseline_auc_judd": 0.5381662623881008,
+      "baseline_kl": 2.9705851835482466
+    }
+  ],
+  "best_10_videos": [
+    {
+      "video_id": "0636",
+      "model_nss_mean": 4.275995495639739,
+      "model_auc_judd_mean": 0.9259909337984933,
+      "model_kl_mean": 1.3595321847092063
+    },
+    {
+      "video_id": "0621",
+      "model_nss_mean": 4.1545514047261545,
+      "model_auc_judd_mean": 0.9755324694809169,
+      "model_kl_mean": 1.415668236985235
+    },
+    {
+      "video_id": "0617",
+      "model_nss_mean": 3.9171827704416056,
+      "model_auc_judd_mean": 0.9704627553942323,
+      "model_kl_mean": 1.6058988237526721
+    },
+    {
+      "video_id": "0634",
+      "model_nss_mean": 3.732830788125267,
+      "model_auc_judd_mean": 0.9634496699714586,
+      "model_kl_mean": 1.5069316769623613
+    },
+    {
+      "video_id": "0631",
+      "model_nss_mean": 3.7232949354060674,
+      "model_auc_judd_mean": 0.9655662028105803,
+      "model_kl_mean": 1.3405742356621655
+    },
+    {
+      "video_id": "0673",
+      "model_nss_mean": 3.3762402855052303,
+      "model_auc_judd_mean": 0.9619720375301561,
+      "model_kl_mean": 1.9987792670416293
+    },
+    {
+      "video_id": "0685",
+      "model_nss_mean": 3.018594262742448,
+      "model_auc_judd_mean": 0.9581204268239647,
+      "model_kl_mean": 1.5702792694249705
+    },
+    {
+      "video_id": "0683",
+      "model_nss_mean": 2.9661901362923486,
+      "model_auc_judd_mean": 0.9353226487446378,
+      "model_kl_mean": 1.5066673018561507
+    },
+    {
+      "video_id": "0642",
+      "model_nss_mean": 2.8381222733733362,
+      "model_auc_judd_mean": 0.956919127019846,
+      "model_kl_mean": 1.371005556027637
+    },
+    {
+      "video_id": "0690",
+      "model_nss_mean": 2.833986540748333,
+      "model_auc_judd_mean": 0.9254962811184877,
+      "model_kl_mean": 1.7102291111037342
+    }
+  ],
+  "worst_10_videos": [
+    {
+      "video_id": "0638",
+      "model_nss_mean": -0.12511450643768124,
+      "model_auc_judd_mean": 0.6686797510375734,
+      "model_kl_mean": 3.7004465839417398
+    },
+    {
+      "video_id": "0603",
+      "model_nss_mean": 0.18179760380691312,
+      "model_auc_judd_mean": 0.714606110659052,
+      "model_kl_mean": 2.8202899780318034
+    },
+    {
+      "video_id": "0618",
+      "model_nss_mean": 0.3368463421385931,
+      "model_auc_judd_mean": 0.7035717333654029,
+      "model_kl_mean": 2.328910998669708
+    },
+    {
+      "video_id": "0655",
+      "model_nss_mean": 0.3706333343520912,
+      "model_auc_judd_mean": 0.8679857169898219,
+      "model_kl_mean": 2.626518548181698
+    },
+    {
+      "video_id": "0665",
+      "model_nss_mean": 0.3985994740017387,
+      "model_auc_judd_mean": 0.8639993585011562,
+      "model_kl_mean": 2.9239027739153656
+    },
+    {
+      "video_id": "0619",
+      "model_nss_mean": 0.41224046679618365,
+      "model_auc_judd_mean": 0.8134730840833078,
+      "model_kl_mean": 2.660282473718996
+    },
+    {
+      "video_id": "0626",
+      "model_nss_mean": 0.47526428113479735,
+      "model_auc_judd_mean": 0.6723233376323022,
+      "model_kl_mean": 3.092791266812066
+    },
+    {
+      "video_id": "0656",
+      "model_nss_mean": 0.4888398008517209,
+      "model_auc_judd_mean": 0.6941078468014529,
+      "model_kl_mean": 2.695979865942925
+    },
+    {
+      "video_id": "0660",
+      "model_nss_mean": 0.5053161117973881,
+      "model_auc_judd_mean": 0.7979532843251664,
+      "model_kl_mean": 2.419978788685443
+    },
+    {
+      "video_id": "0659",
+      "model_nss_mean": 0.5262922836196948,
+      "model_auc_judd_mean": 0.7563569616822484,
+      "model_kl_mean": 2.6191017959706717
+    }
+  ],
+  "comparison_with_uniform_baseline": {
+    "nss_delta": 1.6309,
+    "auc_judd_delta": 0.3206,
+    "kl_delta": -0.8732,
+    "cc_delta": 0.3149,
+    "sim_delta": 0.1369
+  },
+  "scientific_conclusion": "The lightweight spatial saliency prototype (TinySalNet) trained under DHF1K saliency-density supervision demonstrates substantial predictive capability beyond the trivial uniform baseline across all primary saliency metrics (NSS, AUC-Judd, KL divergence, CC, SIM). Saliency metrics measure 2D spatial density alignment and are fundamentally distinct from 1D scalar fixation-concentration proxy metrics (MAE/R^2). In accordance with Phase 7 protocol, this model remains a research prototype and is not integrated into production."
+}

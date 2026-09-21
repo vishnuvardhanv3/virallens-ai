@@ -1,0 +1,43 @@
+{
+  "component": "ViralLens Shadow-Mode Spatial Saliency Integration",
+  "phase": "Phase 9",
+  "execution_mode": "SHADOW_MODE_ONLY",
+  "model_provenance": {
+    "name": "TinySalNet",
+    "architecture": "2D Convolutional Encoder-Decoder",
+    "trainable_parameters": 96521,
+    "weights_path": "E:\\new viral\\models\\human_attention_experiments\\dhf1k_spatial\\spatial_model.pt",
+    "weights_sha256": "fd6f27fd5ef6334c597ee3981086fc70f639cd59c7d57399fa72253d883b95c9",
+    "training_dataset": "DHF1K continuous saliency supervision",
+    "execution_device": "CPU"
+  },
+  "input_contract": {
+    "channels": 3,
+    "color_space": "RGB",
+    "width": 160,
+    "height": 90,
+    "value_range": [
+      0.0,
+      1.0
+    ],
+    "batch_size": 1
+  },
+  "output_contract": {
+    "channels": 1,
+    "width": 160,
+    "height": 90,
+    "normalization": "Spatial Softplus with sum-to-1 division"
+  },
+  "sampling_contract": {
+    "default_rate": "1 frame per second",
+    "budget_cap": 20,
+    "deterministic": true
+  },
+  "safety_boundaries": {
+    "ensembling": "STRICTLY_FORBIDDEN",
+    "score_blending": "STRICTLY_FORBIDDEN",
+    "nemar_modification": "STRICTLY_FORBIDDEN",
+    "production_promotion": "FALSE",
+    "discovery_or_ranking_influence": "NONE"
+  }
+}
